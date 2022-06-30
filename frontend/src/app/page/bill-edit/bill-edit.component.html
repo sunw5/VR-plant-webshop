@@ -1,0 +1,131 @@
+<div class="row mt-3">
+  <div class="col-md-6 col-sm-8">
+    <div *ngIf="bill$ | async as bill" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title" *ngIf="bill._id !== 'new'">
+          Számla szerkesztése
+        </h4>
+        <h4 class="card-title" *ngIf="bill._id === 'new'">
+          Új számla felvétele
+        </h4>
+      </div>
+
+      <div class="card-body">
+        <form #billForm="ngForm">
+          <h3 class="h4 text-primary font-weight-bold">
+            ID:
+            <span *ngIf="bill._id">{{ bill._id }}</span>
+            <span *ngIf="!bill._id">generált</span>
+          </h3>
+          <input type="hidden" name="id" [(ngModel)]="bill._id" required />
+
+          <h3 class="h5 text-secondary">Rendelés *</h3>
+          <div class="ms-3">
+            <h6>Azonosító</h6>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="orderId"
+                name="orderId"
+                [(ngModel)]="bill['orderId']._id"
+                #orderId="ngModel"
+                pattern="^[0-9a-z]{1,30}$"
+                required
+              />
+              <div
+                *ngIf="orderId.invalid && (orderId.dirty || orderId.touched)"
+                class="alert"
+              >
+                <div *ngIf="orderId.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="orderId.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Összeg *</h3>
+          <div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                name="price"
+                [(ngModel)]="bill['price']"
+                #price="ngModel"
+                pattern="^[1-9][0-9]{1,20}$"
+                required
+              />
+              <div
+                *ngIf="price.invalid && (price.dirty || price.touched)"
+                class="alert"
+              >
+                <div *ngIf="price.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="price.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Státusz *</h3>
+          <div>
+            <div class="form-group">
+              <select
+                [(ngModel)]="bill['status']"
+                name="category"
+                class="form-control"
+                pattern="^új|teljesítve|stornózott$"
+                #status="ngModel"
+              >
+                <option value="">choose a category</option>
+                <option>új</option>
+                <option>teljesítve</option>
+                <option>stornózott</option>
+              </select>
+              <div
+                *ngIf="status.invalid && (status.dirty || status.touched)"
+                class="alert"
+              >
+                <div *ngIf="status.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="status.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right mt-3">
+            <button
+              [disabled]="billForm.invalid"
+              *ngIf="bill['_id'] != 'new'"
+              (click)="onUpdate(bill, billForm)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Update bill
+            </button>
+            <button
+              [disabled]="billForm.invalid"
+              *ngIf="bill['_id'] == 'new'"
+              (click)="onCreate(bill)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Create bill
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

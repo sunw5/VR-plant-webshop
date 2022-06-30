@@ -1,0 +1,4152 @@
+info: GET /customer 200 27827 - 182.584 ms
+
+info: GET /customer/62b24ce1d49e0dad0e0df6ea 200 347 - 67.804 ms
+
+info: PATCH /address/62b2369a6421a9d9139097e5 200 97 - 57.248 ms
+
+info: PATCH /address/62b8dcc2542a6ecc541e5749 200 97 - 38.649 ms
+
+info: PATCH /customer/62b24ce1d49e0dad0e0df6ea 200 229 - 46.226 ms
+
+info: GET /customer 200 27827 - 161.210 ms
+
+info: GET /product 200 45289 - 129.997 ms
+
+info: GET /product/62af69709f6517dc083a2232 200 403 - 31.610 ms
+
+info: PATCH /product/62af69709f6517dc083a2232 200 411 - 47.050 ms
+
+info: GET /product 200 45289 - 116.200 ms
+
+info: POST /login 200 391 - 157.369 ms
+
+info: GET /address 304 - - 245.349 ms
+
+info: GET /product 304 - - 281.473 ms
+
+info: GET /order 304 - - 456.370 ms
+
+info: GET /customer 304 - - 505.021 ms
+
+info: GET /product 304 - - 238.598 ms
+
+info: GET /bill 304 - - 535.075 ms
+
+info: GET /order 304 - - 124.625 ms
+
+info: GET /bill 304 - - 140.909 ms
+
+info: GET /order 304 - - 103.474 ms
+
+info: GET /order 304 - - 110.033 ms
+
+info: GET /bill 304 - - 120.070 ms
+
+info: GET /bill 304 - - 113.808 ms
+
+info: GET /customer 304 - - 153.149 ms
+
+info: POST /login 401 12 - 130.768 ms
+
+info: POST /login 401 12 - 30.963 ms
+
+info: POST /login 200 391 - 146.615 ms
+
+info: GET /order 200 2 - 37.232 ms
+
+info: GET /order 200 2 - 39.529 ms
+
+info: GET /order 200 2 - 179.325 ms
+
+info: GET /order 200 2 - 179.602 ms
+
+info: GET /customer 200 2 - 155.125 ms
+
+info: GET /product 200 49955 - 242.619 ms
+
+info: GET /address 200 2 - 183.875 ms
+
+info: GET /bill 200 2 - 144.783 ms
+
+info: GET /bill 200 2 - 150.775 ms
+
+info: GET /bill 200 2 - 109.262 ms
+
+info: GET /bill 200 2 - 112.683 ms
+
+info: GET /product 200 49955 - 393.016 ms
+
+info: GET /product 200 49955 - 100.699 ms
+
+error: uncaughtException: Invalid regular expression: missing /
+E:\Training360-2\VR-plant-websop\backend\src\models\product.model.js:33
+        return /^[A-Za-z]{0,20}( [A-Za-z-\]{1,20}){0,5}$/.test(v);
+               ^
+
+SyntaxError: Invalid regular expression: missing /
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (E:\Training360-2\VR-plant-websop\backend\src\controllers\product\router.js:5:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14) {"date":"Wed Jun 29 2022 04:13:01 GMT+0200 (Central European Summer Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":23394},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","E:\\Training360-2\\VR-plant-websop\\backend\\src\\index.js","src/index.js"],"cwd":"E:\\Training360-2\\VR-plant-websop\\backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18547622,"external":23594236,"heapTotal":61267968,"heapUsed":35765560,"rss":73748480},"pid":5848,"uid":null,"version":"v16.15.1"},"stack":"E:\\Training360-2\\VR-plant-websop\\backend\\src\\models\\product.model.js:33\n        return /^[A-Za-z]{0,20}( [A-Za-z-\\]{1,20}){0,5}$/.test(v);\n               ^\n\nSyntaxError: Invalid regular expression: missing /\n    at Object.compileFunction (node:vm:352:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at Object.<anonymous> (E:\\Training360-2\\VR-plant-websop\\backend\\src\\controllers\\product\\router.js:5:22)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)","trace":[{"column":18,"file":"node:vm","function":"Object.compileFunction","line":352,"method":"compileFunction","native":false},{"column":15,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1033,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1069,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1005,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":102,"method":null,"native":false},{"column":22,"file":"E:\\Training360-2\\VR-plant-websop\\backend\\src\\controllers\\product\\router.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false}]}
+error: uncaughtException: Invalid regular expression: missing /
+E:\Training360-2\VR-plant-websop\backend\src\models\product.model.js:33
+        return /^[A-Za-z]{0,20}( [A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű\-\.\]{1,20}){0,5}$/.test(v);
+               ^
+
+SyntaxError: Invalid regular expression: missing /
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (E:\Training360-2\VR-plant-websop\backend\src\controllers\product\router.js:5:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14) {"date":"Wed Jun 29 2022 04:20:49 GMT+0200 (Central European Summer Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":23861},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","E:\\Training360-2\\VR-plant-websop\\backend\\src\\index.js","src/index.js"],"cwd":"E:\\Training360-2\\VR-plant-websop\\backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18380378,"external":23602867,"heapTotal":62054400,"heapUsed":33071896,"rss":74698752},"pid":11084,"uid":null,"version":"v16.15.1"},"stack":"E:\\Training360-2\\VR-plant-websop\\backend\\src\\models\\product.model.js:33\n        return /^[A-Za-z]{0,20}( [A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű\\-\\.\\]{1,20}){0,5}$/.test(v);\n               ^\n\nSyntaxError: Invalid regular expression: missing /\n    at Object.compileFunction (node:vm:352:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at Object.<anonymous> (E:\\Training360-2\\VR-plant-websop\\backend\\src\\controllers\\product\\router.js:5:22)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)","trace":[{"column":18,"file":"node:vm","function":"Object.compileFunction","line":352,"method":"compileFunction","native":false},{"column":15,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1033,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1069,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1005,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":102,"method":null,"native":false},{"column":22,"file":"E:\\Training360-2\\VR-plant-websop\\backend\\src\\controllers\\product\\router.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false}]}
+info: GET /bill 200 12452 - 100.414 ms
+
+info: GET /order 200 23643 - 97.476 ms
+
+info: GET /customer 200 35540 - 120.487 ms
+
+info: POST /login 200 391 - 235.435 ms
+
+info: GET /product 200 43959 - 101.100 ms
+
+info: GET /order 200 23643 - 271.139 ms
+
+info: GET /address 200 18849 - 281.500 ms
+
+info: GET /bill 200 12452 - 291.671 ms
+
+info: GET /customer 304 - - 469.969 ms
+
+info: GET /bill 304 - - 189.427 ms
+
+info: GET /product 304 - - 420.119 ms
+
+info: GET /order 304 - - 217.924 ms
+
+info: GET /bill 304 - - 66.696 ms
+
+info: GET /order 304 - - 69.551 ms
+
+info: GET /bill 304 - - 63.329 ms
+
+info: GET /order 304 - - 68.955 ms
+
+info: GET /product 304 - - 90.751 ms
+
+info: GET /product 304 - - 85.112 ms
+
+info: GET /order 304 - - 101.853 ms
+
+info: GET /bill 304 - - 100.525 ms
+
+info: GET /address 304 - - 109.122 ms
+
+info: GET /customer 304 - - 130.696 ms
+
+info: GET /product 304 - - 54.094 ms
+
+info: GET /order 304 - - 68.671 ms
+
+info: GET /bill 304 - - 74.117 ms
+
+info: GET /order 304 - - 70.118 ms
+
+info: GET /bill 304 - - 74.174 ms
+
+info: GET /order 304 - - 66.283 ms
+
+info: GET /bill 304 - - 72.447 ms
+
+info: GET /bill 304 - - 97.795 ms
+
+info: GET /address 304 - - 105.113 ms
+
+info: GET /order 304 - - 114.847 ms
+
+info: GET /product 304 - - 127.520 ms
+
+info: GET /customer 304 - - 310.315 ms
+
+info: GET /bill 304 - - 208.200 ms
+
+info: GET /order 304 - - 221.245 ms
+
+info: GET /product 304 - - 222.225 ms
+
+info: GET /bill 304 - - 62.227 ms
+
+info: GET /order 304 - - 62.728 ms
+
+info: GET /bill 304 - - 55.278 ms
+
+info: GET /order 304 - - 66.340 ms
+
+info: GET /address 304 - - 101.600 ms
+
+info: GET /order 304 - - 115.794 ms
+
+info: GET /bill 304 - - 115.435 ms
+
+info: GET /product 304 - - 138.922 ms
+
+info: GET /customer 304 - - 138.127 ms
+
+info: GET /product 304 - - 38.220 ms
+
+info: GET /order 304 - - 68.727 ms
+
+info: GET /bill 304 - - 73.844 ms
+
+info: GET /order 304 - - 64.304 ms
+
+info: GET /bill 304 - - 68.175 ms
+
+info: GET /order 304 - - 73.637 ms
+
+info: GET /bill 304 - - 77.905 ms
+
+info: GET /bill 304 - - 108.822 ms
+
+info: GET /address 304 - - 114.915 ms
+
+info: GET /order 304 - - 123.459 ms
+
+info: GET /product 304 - - 131.427 ms
+
+info: GET /customer 304 - - 141.716 ms
+
+info: GET /product 304 - - 57.443 ms
+
+info: GET /bill 304 - - 69.155 ms
+
+info: GET /order 304 - - 74.961 ms
+
+info: GET /bill 304 - - 60.709 ms
+
+info: GET /order 304 - - 70.250 ms
+
+info: GET /bill 304 - - 59.373 ms
+
+info: GET /order 304 - - 71.522 ms
+
+info: GET /address 304 - - 95.735 ms
+
+info: GET /order 304 - - 103.389 ms
+
+info: GET /bill 304 - - 105.567 ms
+
+info: GET /product 304 - - 121.798 ms
+
+info: GET /customer 304 - - 124.533 ms
+
+info: GET /order 304 - - 61.796 ms
+
+info: GET /bill 304 - - 64.359 ms
+
+info: GET /product 304 - - 78.383 ms
+
+info: GET /order 304 - - 65.717 ms
+
+info: GET /bill 304 - - 71.984 ms
+
+info: GET /order 304 - - 61.113 ms
+
+info: GET /bill 304 - - 66.287 ms
+
+info: GET /bill 304 - - 95.881 ms
+
+info: GET /order 304 - - 109.523 ms
+
+info: GET /address 304 - - 112.570 ms
+
+info: GET /product 304 - - 124.732 ms
+
+info: GET /customer 304 - - 131.466 ms
+
+info: GET /bill 304 - - 61.647 ms
+
+info: GET /order 304 - - 62.661 ms
+
+info: GET /product 304 - - 80.934 ms
+
+info: GET /bill 304 - - 68.989 ms
+
+info: GET /order 304 - - 66.748 ms
+
+info: GET /bill 304 - - 57.833 ms
+
+info: GET /order 304 - - 69.752 ms
+
+info: GET /address 304 - - 93.055 ms
+
+info: GET /order 304 - - 102.792 ms
+
+info: GET /bill 304 - - 105.018 ms
+
+info: GET /product 304 - - 116.082 ms
+
+info: GET /customer 304 - - 125.744 ms
+
+info: GET /order 304 - - 64.509 ms
+
+info: GET /bill 304 - - 68.696 ms
+
+info: GET /product 304 - - 82.938 ms
+
+info: GET /order 304 - - 64.864 ms
+
+info: GET /bill 304 - - 72.243 ms
+
+info: GET /order 304 - - 64.752 ms
+
+info: GET /bill 304 - - 68.944 ms
+
+info: GET /bill 304 - - 95.432 ms
+
+info: GET /order 304 - - 109.826 ms
+
+info: GET /address 304 - - 113.917 ms
+
+info: GET /product 304 - - 124.661 ms
+
+info: GET /customer 304 - - 139.837 ms
+
+info: GET /bill 304 - - 59.020 ms
+
+info: GET /order 304 - - 64.467 ms
+
+info: GET /product 304 - - 83.822 ms
+
+info: GET /bill 304 - - 58.366 ms
+
+info: GET /order 304 - - 67.191 ms
+
+info: GET /bill 304 - - 65.867 ms
+
+info: GET /order 304 - - 72.768 ms
+
+info: GET /order 304 - - 101.965 ms
+
+info: GET /bill 304 - - 100.325 ms
+
+info: GET /address 304 - - 106.869 ms
+
+info: GET /product 304 - - 123.375 ms
+
+info: GET /customer 304 - - 126.395 ms
+
+info: GET /bill 304 - - 57.678 ms
+
+info: GET /product 304 - - 56.012 ms
+
+info: GET /order 304 - - 72.807 ms
+
+info: GET /bill 304 - - 60.463 ms
+
+info: GET /order 304 - - 67.072 ms
+
+info: GET /bill 304 - - 56.311 ms
+
+info: GET /order 304 - - 62.378 ms
+
+info: GET /product 304 - - 89.768 ms
+
+info: GET /product 304 - - 83.979 ms
+
+info: GET /bill 304 - - 91.713 ms
+
+info: GET /order 304 - - 103.046 ms
+
+info: GET /address 304 - - 107.529 ms
+
+info: GET /customer 304 - - 124.604 ms
+
+info: GET /bill 304 - - 58.369 ms
+
+info: GET /order 304 - - 68.215 ms
+
+info: GET /product 304 - - 102.501 ms
+
+info: GET /bill 304 - - 57.152 ms
+
+info: GET /order 304 - - 62.807 ms
+
+info: GET /bill 304 - - 66.710 ms
+
+info: GET /order 304 - - 64.136 ms
+
+info: GET /bill 304 - - 91.954 ms
+
+info: GET /order 304 - - 113.938 ms
+
+info: GET /address 304 - - 112.307 ms
+
+info: GET /product 304 - - 139.000 ms
+
+info: GET /customer 304 - - 135.654 ms
+
+info: GET /bill 304 - - 73.689 ms
+
+info: GET /order 304 - - 81.936 ms
+
+info: GET /product 304 - - 83.188 ms
+
+info: GET /bill 304 - - 57.580 ms
+
+info: GET /order 304 - - 72.474 ms
+
+info: GET /bill 304 - - 64.006 ms
+
+info: GET /order 304 - - 70.329 ms
+
+info: GET /product 304 - - 104.895 ms
+
+info: GET /bill 304 - - 111.588 ms
+
+info: GET /address 304 - - 119.947 ms
+
+info: GET /order 304 - - 151.056 ms
+
+info: GET /customer 304 - - 156.111 ms
+
+info: GET /order 304 - - 70.629 ms
+
+info: GET /bill 304 - - 78.259 ms
+
+info: GET /product 304 - - 85.933 ms
+
+info: GET /order 304 - - 68.828 ms
+
+info: GET /bill 304 - - 73.459 ms
+
+info: GET /order 304 - - 68.566 ms
+
+info: GET /bill 304 - - 73.765 ms
+
+info: GET /bill 304 - - 99.498 ms
+
+info: GET /order 304 - - 111.118 ms
+
+info: GET /address 304 - - 115.473 ms
+
+info: GET /product 304 - - 128.404 ms
+
+info: GET /customer 304 - - 138.169 ms
+
+info: GET /bill 304 - - 59.597 ms
+
+info: GET /order 304 - - 69.706 ms
+
+info: GET /product 304 - - 78.633 ms
+
+info: GET /bill 304 - - 58.802 ms
+
+info: GET /order 304 - - 64.136 ms
+
+info: GET /bill 304 - - 58.467 ms
+
+info: GET /order 304 - - 66.660 ms
+
+info: GET /address 304 - - 67.760 ms
+
+info: GET /customer 304 - - 106.982 ms
+
+info: POST /login 200 391 - 113.534 ms
+
+info: GET /product 304 - - 87.877 ms
+
+info: GET /bill 304 - - 86.832 ms
+
+info: GET /order 304 - - 106.911 ms
+
+info: GET /address 304 - - 113.150 ms
+
+info: GET /customer 304 - - 138.042 ms
+
+info: GET /order 304 - - 62.948 ms
+
+info: GET /bill 304 - - 70.305 ms
+
+info: GET /product 304 - - 98.826 ms
+
+info: GET /bill 304 - - 67.803 ms
+
+info: GET /order 304 - - 78.724 ms
+
+info: GET /bill 304 - - 61.312 ms
+
+info: GET /order 304 - - 69.411 ms
+
+info: GET /address 304 - - 65.936 ms
+
+info: GET /product 304 - - 89.994 ms
+
+info: GET /product 304 - - 94.451 ms
+
+info: GET /address 304 - - 96.633 ms
+
+info: GET /order 304 - - 109.020 ms
+
+info: GET /bill 304 - - 110.959 ms
+
+info: GET /customer 304 - - 131.478 ms
+
+info: GET /bill 304 - - 68.894 ms
+
+info: GET /order 304 - - 79.396 ms
+
+info: GET /product 304 - - 105.309 ms
+
+info: GET /bill 304 - - 62.654 ms
+
+info: GET /order 304 - - 68.027 ms
+
+info: GET /bill 304 - - 60.638 ms
+
+info: GET /order 304 - - 63.748 ms
+
+info: GET /address 200 18849 - 67.897 ms
+
+info: GET /order 200 23643 - 104.694 ms
+
+info: GET /product 200 43959 - 121.110 ms
+
+info: GET /product 200 43959 - 128.477 ms
+
+info: GET /order 200 23643 - 272.068 ms
+
+info: GET /order 200 23643 - 278.940 ms
+
+info: GET /order 200 23643 - 288.960 ms
+
+info: GET /bill 200 12452 - 196.717 ms
+
+info: GET /address 200 18849 - 209.315 ms
+
+info: GET /customer 200 35540 - 228.650 ms
+
+info: GET /bill 200 12452 - 64.937 ms
+
+info: GET /bill 200 12452 - 69.619 ms
+
+info: GET /bill 200 12452 - 79.315 ms
+
+info: GET /address 200 18849 - 65.788 ms
+
+info: GET /order 200 23643 - 115.990 ms
+
+info: GET /order 200 23643 - 142.350 ms
+
+info: GET /product 200 43959 - 162.861 ms
+
+info: GET /product 200 43959 - 171.275 ms
+
+info: GET /order 200 23643 - 317.504 ms
+
+info: GET /order 200 23643 - 325.213 ms
+
+info: GET /bill 200 12452 - 186.719 ms
+
+info: GET /address 200 18849 - 198.521 ms
+
+info: GET /bill 200 12452 - 206.153 ms
+
+info: GET /customer 200 35540 - 224.327 ms
+
+info: GET /bill 200 12452 - 83.120 ms
+
+info: GET /bill 200 12452 - 95.236 ms
+
+info: GET /order 200 23643 - 67.813 ms
+
+info: GET /order 200 23643 - 75.442 ms
+
+info: GET /product 200 43959 - 90.600 ms
+
+info: GET /product 200 43959 - 101.840 ms
+
+info: GET /order 200 23643 - 108.275 ms
+
+info: GET /order 200 23643 - 254.358 ms
+
+info: GET /bill 200 12452 - 176.401 ms
+
+info: GET /bill 200 12452 - 183.477 ms
+
+info: GET /address 200 18849 - 193.328 ms
+
+info: GET /bill 200 12452 - 197.712 ms
+
+info: GET /customer 200 35540 - 212.992 ms
+
+info: GET /bill 200 12452 - 81.560 ms
+
+info: GET /order 200 23643 - 108.800 ms
+
+info: GET /order 200 23643 - 117.661 ms
+
+info: GET /order 200 23643 - 122.680 ms
+
+info: GET /order 200 23643 - 132.084 ms
+
+info: GET /product 200 43959 - 157.575 ms
+
+info: GET /product 200 43959 - 163.882 ms
+
+info: GET /address 200 18849 - 62.124 ms
+
+info: GET /customer 200 35540 - 74.524 ms
+
+info: GET /bill 200 12452 - 78.605 ms
+
+info: GET /bill 200 12452 - 83.288 ms
+
+info: GET /bill 200 12452 - 88.508 ms
+
+info: GET /bill 200 12452 - 96.895 ms
+
+info: GET /address 200 18849 - 70.188 ms
+
+info: GET /order 200 23643 - 106.939 ms
+
+info: GET /order 200 23643 - 113.315 ms
+
+info: GET /order 200 23643 - 129.348 ms
+
+info: GET /order 200 23643 - 137.101 ms
+
+info: GET /product 200 43959 - 152.750 ms
+
+info: GET /product 200 43959 - 161.301 ms
+
+info: GET /address 200 18849 - 64.301 ms
+
+info: GET /bill 200 12452 - 66.980 ms
+
+info: GET /bill 200 12452 - 76.015 ms
+
+info: GET /bill 200 12452 - 84.770 ms
+
+info: GET /bill 200 12452 - 95.899 ms
+
+info: GET /customer 200 35540 - 113.764 ms
+
+info: GET /address 200 18849 - 63.737 ms
+
+info: GET /product 200 43959 - 109.674 ms
+
+info: GET /order 200 23643 - 119.736 ms
+
+info: GET /order 200 23643 - 137.174 ms
+
+info: GET /order 200 23643 - 153.096 ms
+
+info: GET /order 200 23643 - 159.634 ms
+
+info: GET /product 200 43959 - 178.601 ms
+
+info: GET /customer 200 35540 - 104.701 ms
+
+info: GET /address 200 18849 - 64.527 ms
+
+info: GET /bill 200 12452 - 74.626 ms
+
+info: GET /bill 200 12452 - 79.539 ms
+
+info: GET /bill 200 12452 - 85.422 ms
+
+info: GET /bill 200 12452 - 89.566 ms
+
+info: GET /order 200 23643 - 110.883 ms
+
+info: GET /order 200 23643 - 127.857 ms
+
+info: GET /order 200 23643 - 138.803 ms
+
+info: GET /product 200 43959 - 155.212 ms
+
+info: GET /order 200 23643 - 153.503 ms
+
+info: GET /product 200 43959 - 168.287 ms
+
+info: GET /customer 200 35540 - 67.034 ms
+
+info: GET /bill 200 12452 - 66.578 ms
+
+info: GET /bill 200 12452 - 76.596 ms
+
+info: GET /address 200 18849 - 88.982 ms
+
+info: GET /bill 200 12452 - 93.078 ms
+
+info: GET /bill 200 12452 - 101.806 ms
+
+info: GET /order 200 23643 - 111.892 ms
+
+info: GET /order 200 23643 - 129.407 ms
+
+info: GET /order 200 23643 - 140.272 ms
+
+info: GET /order 200 23643 - 154.807 ms
+
+info: GET /product 200 43959 - 164.955 ms
+
+info: GET /product 200 43959 - 174.123 ms
+
+info: GET /customer 200 35540 - 67.502 ms
+
+info: GET /address 200 18849 - 70.657 ms
+
+info: GET /bill 200 12452 - 75.826 ms
+
+info: GET /bill 200 12452 - 82.898 ms
+
+info: GET /bill 200 12452 - 87.274 ms
+
+info: GET /bill 200 12452 - 94.398 ms
+
+info: GET /order 200 23643 - 129.564 ms
+
+info: GET /order 200 23643 - 139.407 ms
+
+info: GET /order 200 23643 - 150.444 ms
+
+info: GET /order 200 23643 - 150.923 ms
+
+info: GET /product 200 43959 - 168.186 ms
+
+info: GET /product 200 43959 - 181.940 ms
+
+info: GET /address 200 18849 - 66.481 ms
+
+info: GET /bill 200 12452 - 72.863 ms
+
+info: GET /bill 200 12452 - 76.838 ms
+
+info: GET /bill 200 12452 - 87.072 ms
+
+info: GET /bill 200 12452 - 96.769 ms
+
+info: GET /customer 200 35540 - 123.064 ms
+
+info: GET /order 200 23643 - 102.724 ms
+
+info: GET /order 200 23643 - 109.297 ms
+
+info: GET /order 200 23643 - 121.678 ms
+
+info: GET /product 200 43959 - 139.953 ms
+
+info: GET /order 200 23643 - 148.021 ms
+
+info: GET /product 200 43959 - 164.408 ms
+
+info: GET /bill 200 12452 - 57.895 ms
+
+info: GET /bill 200 12452 - 65.229 ms
+
+info: GET /address 200 18849 - 73.462 ms
+
+info: GET /bill 200 12452 - 72.753 ms
+
+info: GET /bill 200 12452 - 80.772 ms
+
+info: GET /customer 200 35540 - 108.290 ms
+
+info: GET /order 200 23643 - 72.684 ms
+
+info: GET /product 200 43959 - 90.040 ms
+
+info: GET /product 200 43959 - 98.143 ms
+
+info: GET /order 200 23643 - 104.367 ms
+
+info: GET /order 200 23643 - 112.422 ms
+
+info: GET /order 200 23643 - 123.775 ms
+
+info: GET /bill 200 12452 - 70.448 ms
+
+info: GET /bill 200 12452 - 83.484 ms
+
+info: GET /address 200 18849 - 98.718 ms
+
+info: GET /bill 200 12452 - 97.974 ms
+
+info: GET /bill 200 12452 - 108.321 ms
+
+info: GET /customer 200 35540 - 130.249 ms
+
+info: GET /order 200 23643 - 110.534 ms
+
+info: GET /order 200 23643 - 120.349 ms
+
+info: GET /order 200 23643 - 129.834 ms
+
+info: GET /product 200 43959 - 151.914 ms
+
+info: GET /order 200 23643 - 154.791 ms
+
+info: GET /product 200 43959 - 175.692 ms
+
+info: GET /address 200 18849 - 68.401 ms
+
+info: GET /bill 200 12452 - 69.319 ms
+
+info: GET /bill 200 12452 - 72.203 ms
+
+info: GET /bill 200 12452 - 77.258 ms
+
+info: GET /bill 200 12452 - 85.971 ms
+
+info: GET /customer 200 35540 - 108.164 ms
+
+info: GET /order 200 23643 - 109.285 ms
+
+info: GET /order 200 23643 - 119.408 ms
+
+info: GET /order 200 23643 - 133.200 ms
+
+info: GET /order 200 23643 - 137.964 ms
+
+info: GET /product 200 43959 - 158.793 ms
+
+info: GET /product 200 43959 - 167.490 ms
+
+info: GET /address 200 18849 - 70.112 ms
+
+info: GET /customer 200 35540 - 80.549 ms
+
+info: GET /bill 200 12452 - 84.335 ms
+
+info: GET /bill 200 12452 - 87.986 ms
+
+info: GET /bill 200 12452 - 94.294 ms
+
+info: GET /bill 200 12452 - 99.248 ms
+
+info: GET /order 200 23643 - 123.613 ms
+
+info: GET /order 200 23643 - 130.998 ms
+
+info: GET /order 200 23643 - 136.116 ms
+
+info: GET /product 200 43959 - 154.279 ms
+
+info: GET /order 200 23643 - 154.909 ms
+
+info: GET /product 200 43959 - 170.479 ms
+
+info: GET /customer 200 35540 - 66.202 ms
+
+info: GET /bill 200 12452 - 69.841 ms
+
+info: GET /bill 200 12452 - 72.293 ms
+
+info: GET /address 200 18849 - 83.185 ms
+
+info: GET /bill 200 12452 - 83.902 ms
+
+info: GET /bill 200 12452 - 90.209 ms
+
+info: GET /address 200 18849 - 70.847 ms
+
+info: GET /product 200 43959 - 87.871 ms
+
+info: GET /order 200 23643 - 117.736 ms
+
+info: GET /order 200 23643 - 124.965 ms
+
+info: GET /order 200 23643 - 141.317 ms
+
+info: GET /order 200 23643 - 159.762 ms
+
+info: GET /product 200 43959 - 189.089 ms
+
+info: GET /customer 200 35540 - 114.086 ms
+
+info: GET /address 200 18849 - 61.559 ms
+
+info: GET /bill 200 12452 - 72.287 ms
+
+info: GET /bill 200 12452 - 81.962 ms
+
+info: GET /bill 200 12452 - 89.902 ms
+
+info: GET /bill 200 12452 - 99.583 ms
+
+info: GET /order 200 23643 - 114.071 ms
+
+info: GET /order 200 23643 - 120.039 ms
+
+info: GET /order 200 23643 - 122.988 ms
+
+info: GET /order 200 23643 - 133.230 ms
+
+info: GET /product 200 43959 - 148.021 ms
+
+info: GET /product 200 43959 - 157.663 ms
+
+info: GET /address 200 18849 - 60.398 ms
+
+info: GET /bill 200 12452 - 67.822 ms
+
+info: GET /bill 200 12452 - 74.903 ms
+
+info: GET /bill 200 12452 - 80.632 ms
+
+info: GET /bill 200 12452 - 87.043 ms
+
+info: GET /customer 200 35540 - 100.866 ms
+
+info: GET /order 200 23643 - 69.681 ms
+
+info: GET /order 200 23643 - 79.912 ms
+
+info: GET /order 200 23643 - 87.870 ms
+
+info: GET /product 200 43959 - 104.949 ms
+
+info: GET /product 200 43959 - 113.876 ms
+
+info: GET /order 200 23643 - 120.412 ms
+
+info: GET /address 200 18849 - 60.978 ms
+
+info: GET /bill 200 12452 - 67.399 ms
+
+info: GET /bill 200 12452 - 74.561 ms
+
+info: GET /bill 200 12452 - 78.571 ms
+
+info: GET /bill 200 12452 - 85.315 ms
+
+info: GET /customer 200 35540 - 115.565 ms
+
+info: GET /order 200 23643 - 113.859 ms
+
+info: GET /order 200 23643 - 127.832 ms
+
+info: GET /order 200 23643 - 139.655 ms
+
+info: GET /product 200 43959 - 161.656 ms
+
+info: GET /order 200 23643 - 155.042 ms
+
+info: GET /product 200 43959 - 174.858 ms
+
+info: GET /address 200 18849 - 62.001 ms
+
+info: GET /bill 200 12452 - 67.435 ms
+
+info: GET /bill 200 12452 - 70.298 ms
+
+info: GET /bill 200 12452 - 78.089 ms
+
+info: GET /bill 200 12452 - 81.341 ms
+
+info: GET /customer 200 35540 - 97.972 ms
+
+info: GET /order 200 23643 - 102.268 ms
+
+info: GET /order 200 23643 - 102.644 ms
+
+info: GET /order 200 23643 - 114.552 ms
+
+info: GET /order 200 23643 - 126.123 ms
+
+info: GET /product 200 43959 - 153.525 ms
+
+info: GET /product 200 43959 - 172.310 ms
+
+info: GET /address 200 18849 - 59.235 ms
+
+info: GET /bill 200 12452 - 63.191 ms
+
+info: GET /bill 200 12452 - 70.447 ms
+
+info: GET /bill 200 12452 - 77.856 ms
+
+info: GET /bill 200 12452 - 80.917 ms
+
+info: GET /customer 200 35540 - 96.770 ms
+
+info: GET /order 200 23643 - 111.541 ms
+
+info: GET /order 200 23643 - 122.717 ms
+
+info: GET /order 200 23643 - 130.057 ms
+
+info: GET /order 200 23643 - 137.850 ms
+
+info: GET /product 200 43959 - 161.169 ms
+
+info: GET /product 200 43959 - 173.587 ms
+
+info: GET /address 200 18849 - 76.287 ms
+
+info: GET /bill 200 12452 - 79.593 ms
+
+info: GET /bill 200 12452 - 116.583 ms
+
+info: GET /bill 200 12452 - 142.454 ms
+
+info: GET /bill 200 12452 - 160.258 ms
+
+info: GET /customer 200 35540 - 186.043 ms
+
+info: GET /product 200 43959 - 92.659 ms
+
+info: GET /product 200 43959 - 57.956 ms
+
+info: GET /order 200 23643 - 113.689 ms
+
+info: GET /order 200 23643 - 117.492 ms
+
+info: GET /order 200 23643 - 127.246 ms
+
+info: GET /order 200 23643 - 134.991 ms
+
+info: GET /product 200 43959 - 153.182 ms
+
+info: GET /customer 200 35540 - 129.906 ms
+
+info: GET /bill 200 12452 - 68.235 ms
+
+info: GET /bill 200 12452 - 73.753 ms
+
+info: GET /address 200 18849 - 83.499 ms
+
+info: GET /bill 200 12452 - 87.950 ms
+
+info: GET /bill 200 12452 - 96.396 ms
+
+info: GET /product 200 43959 - 93.546 ms
+
+info: GET /product 200 43959 - 82.250 ms
+
+info: GET /order 200 23643 - 110.616 ms
+
+info: GET /order 200 23643 - 126.837 ms
+
+info: GET /order 200 23643 - 137.847 ms
+
+info: GET /order 200 23643 - 147.369 ms
+
+info: GET /product 200 43959 - 174.008 ms
+
+info: GET /customer 200 35540 - 124.029 ms
+
+info: GET /address 200 18849 - 63.240 ms
+
+info: GET /bill 200 12452 - 66.632 ms
+
+info: GET /bill 200 12452 - 71.231 ms
+
+info: GET /bill 200 12452 - 79.426 ms
+
+info: GET /bill 200 12452 - 81.527 ms
+
+info: GET /order 200 23643 - 110.545 ms
+
+info: GET /order 200 23643 - 124.482 ms
+
+info: GET /order 200 23643 - 128.948 ms
+
+info: GET /order 200 23643 - 139.874 ms
+
+info: GET /product 200 43959 - 155.331 ms
+
+info: GET /product 200 43959 - 165.664 ms
+
+info: GET /address 200 18849 - 65.537 ms
+
+info: GET /customer 200 35540 - 76.322 ms
+
+info: GET /bill 200 12452 - 75.268 ms
+
+info: GET /bill 200 12452 - 82.496 ms
+
+info: GET /bill 200 12452 - 86.382 ms
+
+info: GET /bill 200 12452 - 93.018 ms
+
+info: GET /product 200 43959 - 89.092 ms
+
+info: GET /product 200 43959 - 93.741 ms
+
+info: GET /order 200 23643 - 110.299 ms
+
+info: GET /order 200 23643 - 120.853 ms
+
+info: GET /order 200 23643 - 130.777 ms
+
+info: GET /order 200 23643 - 138.201 ms
+
+info: GET /product 200 43959 - 152.970 ms
+
+info: GET /customer 200 35540 - 100.688 ms
+
+info: GET /address 200 18849 - 66.024 ms
+
+info: GET /bill 200 12452 - 69.214 ms
+
+info: GET /bill 200 12452 - 76.807 ms
+
+info: GET /bill 200 12452 - 80.057 ms
+
+info: GET /bill 200 12452 - 86.553 ms
+
+info: GET /order 200 23643 - 67.858 ms
+
+info: GET /product 200 43959 - 81.774 ms
+
+info: GET /order 200 23643 - 84.196 ms
+
+info: GET /product 200 43959 - 96.696 ms
+
+info: GET /order 200 23643 - 97.448 ms
+
+info: GET /order 200 23643 - 105.023 ms
+
+info: GET /address 200 18849 - 62.836 ms
+
+info: GET /bill 200 12452 - 69.504 ms
+
+info: GET /bill 200 12452 - 74.761 ms
+
+info: GET /bill 200 12452 - 88.192 ms
+
+info: GET /bill 200 12452 - 92.737 ms
+
+info: GET /customer 200 35540 - 115.976 ms
+
+info: GET /product 200 43959 - 88.762 ms
+
+info: GET /product 200 43959 - 92.139 ms
+
+info: GET /order 200 23643 - 103.628 ms
+
+info: GET /order 200 23643 - 115.183 ms
+
+info: GET /order 200 23643 - 123.805 ms
+
+info: GET /product 200 43959 - 142.288 ms
+
+info: GET /order 200 23643 - 142.023 ms
+
+info: GET /customer 200 35540 - 105.064 ms
+
+info: GET /address 200 18849 - 61.293 ms
+
+info: GET /bill 200 12452 - 72.623 ms
+
+info: GET /bill 200 12452 - 80.646 ms
+
+info: GET /bill 200 12452 - 94.887 ms
+
+info: GET /bill 200 12452 - 104.488 ms
+
+info: GET /product 200 43959 - 91.103 ms
+
+info: GET /order 200 23643 - 109.060 ms
+
+info: GET /order 200 23643 - 112.377 ms
+
+info: GET /order 200 23643 - 126.344 ms
+
+info: GET /product 200 43959 - 147.632 ms
+
+info: GET /order 200 23643 - 150.109 ms
+
+info: GET /product 200 43959 - 164.682 ms
+
+info: GET /address 200 18849 - 60.375 ms
+
+info: GET /bill 200 12452 - 65.073 ms
+
+info: GET /bill 200 12452 - 70.853 ms
+
+info: GET /bill 200 12452 - 74.747 ms
+
+info: GET /bill 200 12452 - 79.422 ms
+
+info: GET /customer 200 35540 - 97.124 ms
+
+info: GET /product 200 43959 - 92.391 ms
+
+info: GET /order 200 23643 - 108.801 ms
+
+info: GET /order 200 23643 - 118.128 ms
+
+info: GET /order 200 23643 - 125.347 ms
+
+info: GET /order 200 23643 - 133.604 ms
+
+info: GET /product 200 43959 - 157.502 ms
+
+info: GET /product 200 43959 - 161.264 ms
+
+info: GET /address 200 18849 - 59.568 ms
+
+info: GET /bill 200 12452 - 63.383 ms
+
+info: GET /bill 200 12452 - 73.252 ms
+
+info: GET /bill 200 12452 - 73.561 ms
+
+info: GET /bill 200 12452 - 81.124 ms
+
+info: GET /customer 200 35540 - 102.264 ms
+
+info: GET /order 200 23643 - 113.357 ms
+
+info: GET /order 200 23643 - 117.875 ms
+
+info: GET /order 200 23643 - 131.440 ms
+
+info: GET /order 200 23643 - 137.970 ms
+
+info: GET /product 200 43959 - 153.940 ms
+
+info: GET /product 200 43959 - 160.749 ms
+
+info: GET /address 200 18849 - 63.480 ms
+
+info: GET /bill 200 12452 - 69.096 ms
+
+info: GET /bill 200 12452 - 74.258 ms
+
+info: GET /bill 200 12452 - 79.545 ms
+
+info: GET /bill 200 12452 - 84.458 ms
+
+info: GET /customer 200 35540 - 105.075 ms
+
+info: GET /order 200 23643 - 67.646 ms
+
+info: GET /order 200 23643 - 74.718 ms
+
+info: GET /product 200 43959 - 87.829 ms
+
+info: GET /order 200 23643 - 91.836 ms
+
+info: GET /product 200 43959 - 116.589 ms
+
+info: GET /order 200 23643 - 125.703 ms
+
+info: GET /address 200 18849 - 68.651 ms
+
+info: GET /bill 200 12452 - 75.741 ms
+
+info: GET /bill 200 12452 - 85.063 ms
+
+info: GET /bill 200 12452 - 91.220 ms
+
+info: GET /bill 200 12452 - 102.256 ms
+
+info: GET /customer 200 35540 - 117.026 ms
+
+info: GET /order 200 23643 - 103.769 ms
+
+info: GET /order 200 23643 - 116.291 ms
+
+info: GET /order 200 23643 - 122.152 ms
+
+info: GET /order 200 23643 - 128.390 ms
+
+info: GET /product 200 43959 - 146.807 ms
+
+info: GET /product 200 43959 - 154.043 ms
+
+info: GET /bill 200 12452 - 64.571 ms
+
+info: GET /bill 200 12452 - 69.778 ms
+
+info: GET /address 200 18849 - 80.017 ms
+
+info: GET /bill 200 12452 - 83.982 ms
+
+info: GET /bill 200 12452 - 92.241 ms
+
+info: GET /customer 200 35540 - 111.647 ms
+
+info: GET /order 200 23643 - 108.050 ms
+
+info: GET /order 200 23643 - 123.457 ms
+
+info: GET /order 200 23643 - 138.254 ms
+
+info: GET /order 200 23643 - 143.247 ms
+
+info: GET /product 200 43959 - 162.408 ms
+
+info: GET /product 200 43959 - 169.241 ms
+
+info: GET /customer 200 35540 - 65.935 ms
+
+info: GET /address 200 18849 - 67.561 ms
+
+info: GET /bill 200 12452 - 73.385 ms
+
+info: GET /bill 200 12452 - 77.462 ms
+
+info: GET /bill 200 12452 - 84.079 ms
+
+info: GET /bill 200 12452 - 90.347 ms
+
+info: GET /product 200 43959 - 93.208 ms
+
+info: GET /order 200 23643 - 111.999 ms
+
+info: GET /order 200 23643 - 122.448 ms
+
+info: GET /product 200 43959 - 134.945 ms
+
+info: GET /order 200 23643 - 136.281 ms
+
+info: GET /order 200 23643 - 150.232 ms
+
+info: GET /customer 200 35540 - 118.715 ms
+
+info: GET /address 200 18849 - 67.963 ms
+
+info: GET /bill 200 12452 - 79.235 ms
+
+info: GET /bill 200 12452 - 87.191 ms
+
+info: GET /bill 200 12452 - 92.143 ms
+
+info: GET /bill 200 12452 - 98.839 ms
+
+info: GET /order 200 23643 - 111.144 ms
+
+info: GET /order 200 23643 - 121.493 ms
+
+info: GET /order 200 23643 - 135.050 ms
+
+info: GET /product 200 43959 - 144.091 ms
+
+info: GET /order 200 23643 - 146.828 ms
+
+info: GET /product 200 43959 - 157.207 ms
+
+info: GET /customer 200 35540 - 67.450 ms
+
+info: GET /bill 200 12452 - 70.597 ms
+
+info: GET /address 200 18849 - 78.886 ms
+
+info: GET /bill 200 12452 - 82.345 ms
+
+info: GET /bill 200 12452 - 88.236 ms
+
+info: GET /bill 200 12452 - 93.217 ms
+
+info: GET /product 200 43959 - 100.429 ms
+
+info: GET /product 200 43959 - 103.577 ms
+
+info: GET /order 200 23643 - 127.983 ms
+
+info: GET /order 200 23643 - 150.356 ms
+
+info: GET /order 200 23643 - 160.564 ms
+
+info: GET /product 200 43959 - 180.506 ms
+
+info: GET /order 200 23643 - 179.784 ms
+
+info: GET /address 200 18849 - 63.224 ms
+
+info: GET /bill 200 12452 - 72.018 ms
+
+info: GET /bill 200 12452 - 78.620 ms
+
+info: GET /bill 200 12452 - 83.516 ms
+
+info: GET /bill 200 12452 - 91.550 ms
+
+info: GET /customer 200 35540 - 118.773 ms
+
+info: GET /product 200 43959 - 92.446 ms
+
+info: GET /order 200 23643 - 124.049 ms
+
+info: GET /order 200 23643 - 148.485 ms
+
+info: GET /order 200 23643 - 162.445 ms
+
+info: GET /order 200 23643 - 174.471 ms
+
+info: GET /product 200 43959 - 191.994 ms
+
+info: GET /product 200 43959 - 198.687 ms
+
+info: GET /customer 200 35540 - 70.980 ms
+
+info: GET /address 200 18849 - 74.879 ms
+
+info: GET /bill 200 12452 - 81.950 ms
+
+info: GET /bill 200 12452 - 87.739 ms
+
+info: GET /bill 200 12452 - 91.960 ms
+
+info: GET /bill 200 12452 - 99.263 ms
+
+info: GET /product 200 43959 - 254.518 ms
+
+info: GET /product 200 43959 - 391.940 ms
+
+info: GET /order 200 23643 - 645.813 ms
+
+info: GET /order 200 23643 - 784.072 ms
+
+info: GET /order 200 23643 - 795.461 ms
+
+info: GET /order 200 23643 - 950.183 ms
+
+info: GET /address 200 18849 - 567.720 ms
+
+info: GET /customer 200 35540 - 720.307 ms
+
+info: GET /bill 200 12452 - 484.700 ms
+
+info: GET /bill 200 12452 - 335.782 ms
+
+info: GET /bill 200 12452 - 346.457 ms
+
+info: GET /bill 200 12452 - 177.797 ms
+
+info: GET /product 401 12 - 6.369 ms
+
+info: POST /login 200 391 - 119.509 ms
+
+info: GET /product 200 43959 - 84.542 ms
+
+info: GET /product 200 43959 - 88.050 ms
+
+info: GET /order 200 23643 - 111.840 ms
+
+info: GET /order 200 23643 - 266.544 ms
+
+info: GET /order 200 23643 - 271.868 ms
+
+info: GET /customer 200 35540 - 295.541 ms
+
+info: GET /order 200 23643 - 208.606 ms
+
+info: GET /address 200 18849 - 261.071 ms
+
+info: GET /bill 200 12452 - 262.854 ms
+
+info: GET /bill 200 12452 - 81.870 ms
+
+info: GET /bill 200 12452 - 91.228 ms
+
+info: GET /bill 200 12452 - 96.461 ms
+
+info: GET /product 200 43959 - 90.986 ms
+
+info: GET /product 401 12 - 4.267 ms
+
+info: GET /product 401 12 - 3.563 ms
+
+info: GET /order 401 12 - 3.460 ms
+
+info: GET /order 401 12 - 3.695 ms
+
+info: GET /order 401 12 - 4.032 ms
+
+info: GET /order 401 12 - 3.039 ms
+
+info: GET /customer 401 12 - 3.260 ms
+
+info: GET /address 401 12 - 3.345 ms
+
+info: GET /bill 401 12 - 3.276 ms
+
+info: GET /bill 401 12 - 3.717 ms
+
+info: GET /bill 401 12 - 2.968 ms
+
+info: GET /bill 401 12 - 3.150 ms
+
+info: GET /product 401 12 - 3.247 ms
+
+info: GET /product 401 12 - 3.423 ms
+
+info: GET /order 401 12 - 4.435 ms
+
+info: GET /order 401 12 - 2.781 ms
+
+info: GET /order 401 12 - 2.966 ms
+
+info: GET /order 401 12 - 2.598 ms
+
+info: GET /customer 401 12 - 3.075 ms
+
+info: GET /address 401 12 - 2.863 ms
+
+info: GET /bill 401 12 - 2.882 ms
+
+info: GET /bill 401 12 - 2.912 ms
+
+info: GET /bill 401 12 - 2.778 ms
+
+info: GET /bill 401 12 - 3.458 ms
+
+info: GET /product 401 12 - 2.817 ms
+
+info: GET /product 401 12 - 2.966 ms
+
+info: GET /order 401 12 - 3.744 ms
+
+info: GET /order 401 12 - 2.992 ms
+
+info: GET /order 401 12 - 3.399 ms
+
+info: GET /order 401 12 - 3.237 ms
+
+info: GET /customer 401 12 - 2.768 ms
+
+info: GET /address 401 12 - 3.165 ms
+
+info: GET /bill 401 12 - 3.054 ms
+
+info: GET /bill 401 12 - 2.888 ms
+
+info: GET /bill 401 12 - 3.135 ms
+
+info: GET /bill 401 12 - 3.157 ms
+
+info: GET /product 401 12 - 2.905 ms
+
+info: GET /product 401 12 - 2.962 ms
+
+info: GET /order 401 12 - 3.226 ms
+
+info: GET /order 401 12 - 3.833 ms
+
+info: GET /order 401 12 - 3.035 ms
+
+info: GET /order 401 12 - 3.383 ms
+
+info: GET /customer 401 12 - 3.026 ms
+
+info: GET /address 401 12 - 3.363 ms
+
+info: GET /bill 401 12 - 2.996 ms
+
+info: GET /bill 401 12 - 3.089 ms
+
+info: GET /bill 401 12 - 3.163 ms
+
+info: GET /bill 401 12 - 3.044 ms
+
+info: GET /product 401 12 - 3.052 ms
+
+info: GET /product 401 12 - 2.945 ms
+
+info: GET /order 401 12 - 2.999 ms
+
+info: GET /order 401 12 - 3.042 ms
+
+info: GET /order 401 12 - 3.614 ms
+
+info: GET /order 401 12 - 3.132 ms
+
+info: GET /customer 401 12 - 2.890 ms
+
+info: GET /address 401 12 - 3.317 ms
+
+info: GET /bill 401 12 - 2.629 ms
+
+info: GET /bill 401 12 - 2.640 ms
+
+info: GET /bill 401 12 - 2.739 ms
+
+info: GET /bill 401 12 - 3.107 ms
+
+info: GET /product 401 12 - 2.969 ms
+
+info: GET /product 401 12 - 3.141 ms
+
+info: GET /order 401 12 - 3.151 ms
+
+info: GET /order 401 12 - 3.179 ms
+
+info: GET /order 401 12 - 3.175 ms
+
+info: GET /order 401 12 - 2.728 ms
+
+info: GET /customer 401 12 - 3.728 ms
+
+info: GET /address 401 12 - 3.402 ms
+
+info: GET /bill 401 12 - 2.490 ms
+
+info: GET /bill 401 12 - 2.851 ms
+
+info: GET /bill 401 12 - 3.860 ms
+
+info: GET /bill 401 12 - 2.912 ms
+
+info: POST /login 200 391 - 342.704 ms
+
+info: GET /product 200 43959 - 77.516 ms
+
+info: GET /product 200 43959 - 123.000 ms
+
+info: GET /order 200 23643 - 137.568 ms
+
+info: GET /order 200 23643 - 151.848 ms
+
+info: GET /order 200 23643 - 291.252 ms
+
+info: GET /order 200 23643 - 300.773 ms
+
+info: GET /address 200 18849 - 192.293 ms
+
+info: GET /bill 200 12452 - 187.686 ms
+
+info: GET /bill 200 12452 - 206.687 ms
+
+info: GET /customer 200 35540 - 312.285 ms
+
+info: GET /bill 200 12452 - 77.365 ms
+
+info: GET /bill 200 12452 - 82.454 ms
+
+info: GET /product 200 43959 - 94.195 ms
+
+info: GET /order 200 23643 - 118.084 ms
+
+info: GET /order 200 23643 - 126.166 ms
+
+info: GET /order 200 23643 - 141.993 ms
+
+info: GET /product 200 43959 - 164.408 ms
+
+info: GET /product 200 43959 - 173.382 ms
+
+info: GET /order 200 23643 - 292.217 ms
+
+info: GET /address 200 18849 - 149.186 ms
+
+info: GET /customer 200 35540 - 172.534 ms
+
+info: GET /bill 200 12452 - 174.447 ms
+
+info: GET /bill 200 12452 - 182.965 ms
+
+info: GET /bill 200 12452 - 194.372 ms
+
+info: GET /bill 200 12452 - 91.799 ms
+
+info: GET /product 200 43959 - 91.397 ms
+
+info: GET /order 200 23643 - 122.012 ms
+
+info: GET /order 200 23643 - 135.135 ms
+
+info: GET /order 200 23643 - 145.500 ms
+
+info: GET /product 200 43959 - 169.972 ms
+
+info: GET /product 200 43959 - 178.179 ms
+
+info: GET /order 200 23643 - 176.158 ms
+
+info: GET /address 200 18849 - 69.195 ms
+
+info: GET /bill 200 12452 - 76.826 ms
+
+info: GET /bill 200 12452 - 85.343 ms
+
+info: GET /bill 200 12452 - 91.285 ms
+
+info: GET /bill 200 12452 - 99.242 ms
+
+info: GET /customer 200 35540 - 134.881 ms
+
+info: GET /order 200 23643 - 111.022 ms
+
+info: GET /order 200 23643 - 116.554 ms
+
+info: GET /order 200 23643 - 123.889 ms
+
+info: GET /order 200 23643 - 134.978 ms
+
+info: GET /product 200 43959 - 148.713 ms
+
+info: GET /product 200 43959 - 156.370 ms
+
+info: GET /customer 200 35540 - 73.212 ms
+
+info: GET /address 200 18849 - 77.170 ms
+
+info: GET /bill 200 12452 - 75.087 ms
+
+info: GET /bill 200 12452 - 78.739 ms
+
+info: GET /bill 200 12452 - 82.476 ms
+
+info: GET /bill 200 12452 - 89.984 ms
+
+info: GET /order 200 23643 - 110.238 ms
+
+info: GET /order 200 23643 - 120.599 ms
+
+info: GET /order 200 23643 - 132.071 ms
+
+info: GET /order 200 23643 - 136.880 ms
+
+info: GET /product 200 43959 - 153.253 ms
+
+info: GET /product 200 43959 - 159.873 ms
+
+info: GET /bill 200 12452 - 60.518 ms
+
+info: GET /address 200 18849 - 67.553 ms
+
+info: GET /bill 200 12452 - 70.459 ms
+
+info: GET /bill 200 12452 - 76.382 ms
+
+info: GET /bill 200 12452 - 82.882 ms
+
+info: GET /customer 200 35540 - 95.053 ms
+
+info: GET /order 200 23643 - 113.170 ms
+
+info: GET /order 200 23643 - 121.577 ms
+
+info: GET /order 200 23643 - 132.260 ms
+
+info: GET /order 200 23643 - 143.968 ms
+
+info: GET /product 200 43959 - 163.807 ms
+
+info: GET /product 200 43959 - 168.515 ms
+
+info: GET /address 200 18849 - 59.893 ms
+
+info: GET /customer 200 35540 - 70.716 ms
+
+info: GET /bill 200 12452 - 73.392 ms
+
+info: GET /bill 200 12452 - 76.805 ms
+
+info: GET /bill 200 12452 - 80.402 ms
+
+info: GET /bill 200 12452 - 85.303 ms
+
+info: GET /product 200 43959 - 86.733 ms
+
+info: GET /order 200 23643 - 118.131 ms
+
+info: GET /order 200 23643 - 129.252 ms
+
+info: GET /product 200 43959 - 148.818 ms
+
+info: GET /order 200 23643 - 151.389 ms
+
+info: GET /order 200 23643 - 157.891 ms
+
+info: GET /customer 200 35540 - 89.313 ms
+
+info: GET /address 200 18849 - 61.161 ms
+
+info: GET /bill 200 12452 - 66.150 ms
+
+info: GET /bill 200 12452 - 69.459 ms
+
+info: GET /bill 200 12452 - 74.540 ms
+
+info: GET /bill 200 12452 - 83.585 ms
+
+info: GET /product 200 43959 - 95.774 ms
+
+info: GET /order 200 23643 - 99.587 ms
+
+info: GET /order 200 23643 - 102.657 ms
+
+info: GET /order 200 23643 - 123.093 ms
+
+info: GET /product 200 43959 - 141.049 ms
+
+info: GET /order 200 23643 - 142.082 ms
+
+info: GET /product 200 43959 - 155.389 ms
+
+info: GET /address 200 18849 - 79.739 ms
+
+info: GET /bill 200 12452 - 92.199 ms
+
+info: GET /bill 200 12452 - 99.548 ms
+
+info: GET /bill 200 12452 - 106.837 ms
+
+info: GET /bill 200 12452 - 117.077 ms
+
+info: GET /customer 200 35540 - 138.859 ms
+
+info: GET /product 200 43959 - 93.456 ms
+
+info: GET /product 200 43959 - 136.377 ms
+
+info: GET /order 200 23643 - 156.821 ms
+
+info: GET /order 200 23643 - 175.599 ms
+
+info: GET /product 200 43959 - 198.356 ms
+
+info: GET /order 200 23643 - 208.733 ms
+
+info: GET /order 200 23643 - 225.094 ms
+
+info: GET /address 200 18849 - 76.891 ms
+
+info: GET /bill 200 12452 - 85.260 ms
+
+info: GET /bill 200 12452 - 95.213 ms
+
+info: GET /bill 200 12452 - 100.205 ms
+
+info: GET /bill 200 12452 - 109.862 ms
+
+info: GET /customer 200 35540 - 130.856 ms
+
+info: GET /order 200 23643 - 106.595 ms
+
+info: GET /order 200 23643 - 116.848 ms
+
+info: GET /order 200 23643 - 118.615 ms
+
+info: GET /order 200 23643 - 126.774 ms
+
+info: GET /product 200 43959 - 154.423 ms
+
+info: GET /product 200 43959 - 159.925 ms
+
+info: GET /bill 200 12452 - 61.781 ms
+
+info: GET /address 200 18849 - 71.725 ms
+
+info: GET /bill 200 12452 - 80.552 ms
+
+info: GET /bill 200 12452 - 85.841 ms
+
+info: GET /bill 200 12452 - 97.974 ms
+
+info: GET /customer 200 35540 - 117.273 ms
+
+info: GET /order 200 23643 - 119.615 ms
+
+info: GET /order 200 23643 - 135.416 ms
+
+info: GET /order 200 23643 - 144.969 ms
+
+info: GET /order 200 23643 - 154.950 ms
+
+info: GET /product 200 43959 - 169.081 ms
+
+info: GET /product 200 43959 - 178.112 ms
+
+info: GET /address 200 18849 - 53.946 ms
+
+info: GET /bill 200 12452 - 61.110 ms
+
+info: GET /bill 200 12452 - 64.680 ms
+
+info: GET /bill 200 12452 - 69.988 ms
+
+info: GET /bill 200 12452 - 74.588 ms
+
+info: GET /customer 200 35540 - 94.981 ms
+
+info: GET /order 200 23643 - 112.548 ms
+
+info: GET /order 200 23643 - 125.520 ms
+
+info: GET /order 200 23643 - 137.302 ms
+
+info: GET /order 200 23643 - 139.117 ms
+
+info: GET /product 200 43959 - 156.600 ms
+
+info: GET /product 200 43959 - 161.365 ms
+
+info: GET /address 200 18849 - 58.602 ms
+
+info: GET /customer 200 35540 - 71.240 ms
+
+info: GET /bill 200 12452 - 67.322 ms
+
+info: GET /bill 200 12452 - 76.436 ms
+
+info: GET /bill 200 12452 - 84.121 ms
+
+info: GET /bill 200 12452 - 87.375 ms
+
+info: GET /order 200 23643 - 62.065 ms
+
+info: GET /product 200 43959 - 79.519 ms
+
+info: GET /order 200 23643 - 81.449 ms
+
+info: GET /product 200 43959 - 97.591 ms
+
+info: GET /order 200 23643 - 101.533 ms
+
+info: GET /order 200 23643 - 105.275 ms
+
+info: GET /customer 200 35540 - 90.437 ms
+
+info: GET /address 200 18849 - 71.322 ms
+
+info: GET /bill 200 12452 - 75.360 ms
+
+info: GET /bill 200 12452 - 77.262 ms
+
+info: GET /bill 200 12452 - 81.872 ms
+
+info: GET /bill 200 12452 - 90.950 ms
+
+info: GET /product 200 43959 - 88.671 ms
+
+info: GET /order 200 23643 - 111.965 ms
+
+info: GET /order 200 23643 - 129.035 ms
+
+info: GET /order 200 23643 - 134.961 ms
+
+info: GET /product 200 43959 - 156.174 ms
+
+info: GET /product 200 43959 - 167.653 ms
+
+info: GET /order 200 23643 - 159.855 ms
+
+info: GET /address 200 18849 - 61.463 ms
+
+info: GET /bill 200 12452 - 68.436 ms
+
+info: GET /bill 200 12452 - 70.838 ms
+
+info: GET /bill 200 12452 - 79.617 ms
+
+info: GET /bill 200 12452 - 83.470 ms
+
+info: GET /customer 200 35540 - 103.095 ms
+
+info: GET /order 200 23643 - 114.831 ms
+
+info: GET /order 200 23643 - 123.384 ms
+
+info: GET /order 200 23643 - 131.976 ms
+
+info: GET /order 200 23643 - 141.897 ms
+
+info: GET /product 200 43959 - 157.401 ms
+
+info: GET /product 200 43959 - 166.476 ms
+
+info: GET /address 200 18849 - 77.194 ms
+
+info: GET /customer 200 35540 - 96.619 ms
+
+info: GET /bill 200 12452 - 103.099 ms
+
+info: GET /bill 200 12452 - 115.347 ms
+
+info: GET /bill 200 12452 - 138.902 ms
+
+info: GET /bill 200 12452 - 154.592 ms
+
+info: GET /product 200 43959 - 87.648 ms
+
+info: GET /bill 200 12452 - 98.262 ms
+
+info: GET /address 200 18849 - 125.543 ms
+
+info: GET /order 200 23643 - 132.647 ms
+
+info: GET /product 200 43959 - 154.045 ms
+
+info: GET /product 200 43959 - 158.949 ms
+
+info: GET /customer 200 35540 - 176.273 ms
+
+info: GET /order 200 23643 - 68.628 ms
+
+info: GET /order 200 23643 - 69.703 ms
+
+info: GET /bill 200 12452 - 72.440 ms
+
+info: GET /order 200 23643 - 82.338 ms
+
+info: GET /bill 200 12452 - 84.335 ms
+
+info: GET /bill 200 12452 - 91.090 ms
+
+info: GET /product 200 43959 - 90.053 ms
+
+info: GET /customer 200 35540 - 107.767 ms
+
+info: GET /order 200 23643 - 122.304 ms
+
+info: GET /order 200 23643 - 131.474 ms
+
+info: GET /product 200 43959 - 150.434 ms
+
+info: GET /order 200 23643 - 150.113 ms
+
+info: GET /order 200 23643 - 159.768 ms
+
+info: GET /product 200 43959 - 171.095 ms
+
+info: GET /customer 200 35540 - 65.525 ms
+
+info: GET /bill 200 12452 - 68.929 ms
+
+info: GET /address 200 18849 - 70.810 ms
+
+info: GET /bill 200 12452 - 75.206 ms
+
+info: GET /bill 200 12452 - 84.783 ms
+
+info: GET /bill 200 12452 - 85.170 ms
+
+info: GET /order 200 23643 - 125.829 ms
+
+info: GET /order 200 23643 - 137.728 ms
+
+info: GET /order 200 23643 - 157.932 ms
+
+info: GET /order 200 23643 - 167.831 ms
+
+info: GET /product 200 43959 - 189.921 ms
+
+info: GET /product 200 43959 - 207.040 ms
+
+info: GET /customer 200 35540 - 69.864 ms
+
+info: GET /address 200 18849 - 71.449 ms
+
+info: GET /bill 200 12452 - 76.919 ms
+
+info: GET /bill 200 12452 - 79.922 ms
+
+info: GET /bill 200 12452 - 83.787 ms
+
+info: GET /bill 200 12452 - 90.491 ms
+
+info: GET /product 200 43959 - 89.000 ms
+
+info: GET /order 200 23643 - 123.931 ms
+
+info: GET /order 200 23643 - 130.442 ms
+
+info: GET /order 200 23643 - 143.237 ms
+
+info: GET /order 200 23643 - 146.715 ms
+
+info: GET /product 200 43959 - 164.896 ms
+
+info: GET /product 200 43959 - 170.001 ms
+
+info: GET /address 200 18849 - 65.232 ms
+
+info: GET /bill 200 12452 - 69.333 ms
+
+info: GET /bill 200 12452 - 76.298 ms
+
+info: GET /bill 200 12452 - 83.210 ms
+
+info: GET /bill 200 12452 - 86.755 ms
+
+info: GET /customer 200 35540 - 103.005 ms
+
+info: GET /order 200 23643 - 115.698 ms
+
+info: GET /order 200 23643 - 139.939 ms
+
+info: GET /order 200 23643 - 150.298 ms
+
+info: GET /order 200 23643 - 163.800 ms
+
+info: GET /product 200 43959 - 186.418 ms
+
+info: GET /product 200 43959 - 197.804 ms
+
+info: GET /customer 200 35540 - 77.877 ms
+
+info: GET /address 200 18849 - 85.033 ms
+
+info: GET /bill 200 12452 - 91.204 ms
+
+info: GET /bill 200 12452 - 99.116 ms
+
+info: GET /bill 200 12452 - 103.877 ms
+
+info: GET /bill 200 12452 - 108.491 ms
+
+info: GET /product 200 43959 - 91.866 ms
+
+info: GET /order 200 23643 - 103.861 ms
+
+info: GET /order 200 23643 - 117.741 ms
+
+info: GET /order 200 23643 - 131.440 ms
+
+info: GET /product 200 43959 - 146.331 ms
+
+info: GET /order 200 23643 - 142.851 ms
+
+info: GET /product 200 43959 - 159.498 ms
+
+info: GET /address 200 18849 - 60.932 ms
+
+info: GET /customer 200 35540 - 74.765 ms
+
+info: GET /bill 200 12452 - 76.698 ms
+
+info: GET /bill 200 12452 - 80.215 ms
+
+info: GET /bill 200 12452 - 84.602 ms
+
+info: GET /bill 200 12452 - 92.301 ms
+
+info: GET /product 200 43959 - 93.589 ms
+
+info: GET /order 200 23643 - 115.077 ms
+
+info: GET /order 200 23643 - 121.138 ms
+
+info: GET /order 200 23643 - 133.601 ms
+
+info: GET /product 200 43959 - 152.787 ms
+
+info: GET /order 200 23643 - 151.829 ms
+
+info: GET /product 200 43959 - 172.270 ms
+
+info: GET /address 200 18849 - 60.488 ms
+
+info: GET /bill 200 12452 - 63.148 ms
+
+info: GET /bill 200 12452 - 62.269 ms
+
+info: GET /bill 200 12452 - 71.371 ms
+
+info: GET /bill 200 12452 - 74.989 ms
+
+info: GET /customer 200 35540 - 94.471 ms
+
+info: GET /order 200 23643 - 107.463 ms
+
+info: GET /order 200 23643 - 116.699 ms
+
+info: GET /order 200 23643 - 120.120 ms
+
+info: GET /order 200 23643 - 131.510 ms
+
+info: GET /product 200 43959 - 151.419 ms
+
+info: GET /product 200 43959 - 158.197 ms
+
+info: GET /bill 200 12452 - 68.099 ms
+
+info: GET /bill 200 12452 - 79.985 ms
+
+info: GET /bill 200 12452 - 90.183 ms
+
+info: GET /address 200 18849 - 102.793 ms
+
+info: GET /bill 200 12452 - 110.125 ms
+
+info: GET /customer 200 35540 - 124.596 ms
+
+info: GET /order 200 23643 - 105.993 ms
+
+info: GET /order 200 23643 - 113.529 ms
+
+info: GET /order 200 23643 - 119.038 ms
+
+info: GET /product 200 43959 - 137.323 ms
+
+info: GET /order 200 23643 - 146.087 ms
+
+info: GET /product 200 43959 - 157.508 ms
+
+info: GET /address 200 18849 - 66.503 ms
+
+info: GET /bill 200 12452 - 72.373 ms
+
+info: GET /bill 200 12452 - 78.892 ms
+
+info: GET /bill 200 12452 - 85.076 ms
+
+info: GET /bill 200 12452 - 92.408 ms
+
+info: GET /customer 200 35540 - 108.948 ms
+
+info: GET /product 200 43959 - 94.981 ms
+
+info: GET /order 200 23643 - 108.845 ms
+
+info: GET /order 200 23643 - 116.675 ms
+
+info: GET /order 200 23643 - 135.227 ms
+
+info: GET /product 200 43959 - 156.586 ms
+
+info: GET /product 200 43959 - 165.162 ms
+
+info: GET /order 200 23643 - 162.670 ms
+
+info: GET /address 200 18849 - 55.670 ms
+
+info: GET /bill 200 12452 - 59.376 ms
+
+info: GET /bill 200 12452 - 63.938 ms
+
+info: GET /bill 200 12452 - 71.848 ms
+
+info: GET /bill 200 12452 - 79.008 ms
+
+info: GET /customer 200 35540 - 99.394 ms
+
+info: GET /order 200 23643 - 106.307 ms
+
+info: GET /order 200 23643 - 115.199 ms
+
+info: GET /order 200 23643 - 128.142 ms
+
+info: GET /order 200 23643 - 133.689 ms
+
+info: GET /product 200 43959 - 154.246 ms
+
+info: GET /product 200 43959 - 160.795 ms
+
+info: GET /customer 200 35540 - 74.486 ms
+
+info: GET /address 200 18849 - 80.735 ms
+
+info: GET /bill 200 12452 - 85.188 ms
+
+info: GET /bill 200 12452 - 91.712 ms
+
+info: GET /bill 200 12452 - 97.295 ms
+
+info: GET /bill 200 12452 - 103.866 ms
+
+info: GET /order 200 23643 - 109.043 ms
+
+info: GET /order 200 23643 - 118.116 ms
+
+info: GET /order 200 23643 - 126.879 ms
+
+info: GET /order 200 23643 - 136.088 ms
+
+info: GET /product 200 43959 - 153.872 ms
+
+info: GET /product 200 43959 - 159.943 ms
+
+info: GET /customer 200 35540 - 69.073 ms
+
+info: GET /address 200 18849 - 71.741 ms
+
+info: GET /bill 200 12452 - 72.352 ms
+
+info: GET /bill 200 12452 - 79.624 ms
+
+info: GET /bill 200 12452 - 83.644 ms
+
+info: GET /bill 200 12452 - 88.763 ms
+
+info: GET /order 200 23643 - 109.727 ms
+
+info: GET /order 200 23643 - 112.211 ms
+
+info: GET /order 200 23643 - 125.346 ms
+
+info: GET /product 200 43959 - 146.404 ms
+
+info: GET /order 200 23643 - 147.030 ms
+
+info: GET /product 200 43959 - 162.289 ms
+
+info: GET /customer 200 35540 - 66.178 ms
+
+info: GET /bill 200 12452 - 71.288 ms
+
+info: GET /bill 200 12452 - 78.655 ms
+
+info: GET /bill 200 12452 - 81.149 ms
+
+info: GET /address 200 18849 - 92.644 ms
+
+info: GET /bill 200 12452 - 95.079 ms
+
+info: GET /order 200 23643 - 118.546 ms
+
+info: GET /order 200 23643 - 125.838 ms
+
+info: GET /product 200 43959 - 146.262 ms
+
+info: GET /product 200 43959 - 153.239 ms
+
+info: GET /order 200 23643 - 153.361 ms
+
+info: GET /order 200 23643 - 166.413 ms
+
+info: GET /address 200 18849 - 61.028 ms
+
+info: GET /bill 200 12452 - 65.187 ms
+
+info: GET /bill 200 12452 - 71.001 ms
+
+info: GET /bill 200 12452 - 77.504 ms
+
+info: GET /bill 200 12452 - 83.091 ms
+
+info: GET /customer 200 35540 - 105.458 ms
+
+info: GET /order 200 23643 - 106.509 ms
+
+info: GET /order 200 23643 - 122.784 ms
+
+info: GET /order 200 23643 - 133.236 ms
+
+info: GET /product 200 43959 - 153.624 ms
+
+info: GET /order 200 23643 - 152.605 ms
+
+info: GET /product 200 43959 - 170.371 ms
+
+info: GET /bill 200 12452 - 59.386 ms
+
+info: GET /bill 200 12452 - 64.058 ms
+
+info: GET /address 200 18849 - 71.235 ms
+
+info: GET /bill 200 12452 - 75.053 ms
+
+info: GET /bill 200 12452 - 82.131 ms
+
+info: GET /customer 200 35540 - 101.516 ms
+
+info: GET /order 200 23643 - 103.933 ms
+
+info: GET /order 200 23643 - 113.313 ms
+
+info: GET /order 200 23643 - 126.278 ms
+
+info: GET /order 200 23643 - 129.998 ms
+
+info: GET /product 200 43959 - 149.226 ms
+
+info: GET /product 200 43959 - 156.645 ms
+
+info: GET /address 200 18849 - 53.840 ms
+
+info: GET /bill 200 12452 - 61.037 ms
+
+info: GET /bill 200 12452 - 69.166 ms
+
+info: GET /bill 200 12452 - 72.581 ms
+
+info: GET /bill 200 12452 - 79.006 ms
+
+info: GET /customer 200 35540 - 98.861 ms
+
+info: GET /product 200 43959 - 104.990 ms
+
+info: GET /product 200 43959 - 114.929 ms
+
+info: GET /order 200 23643 - 129.747 ms
+
+info: GET /order 200 23643 - 148.866 ms
+
+info: GET /order 200 23643 - 160.808 ms
+
+info: GET /order 200 23643 - 177.441 ms
+
+info: GET /bill 200 12452 - 64.598 ms
+
+info: GET /bill 200 12452 - 75.586 ms
+
+info: GET /address 200 18849 - 89.182 ms
+
+info: GET /bill 200 12452 - 96.922 ms
+
+info: GET /bill 200 12452 - 110.269 ms
+
+info: GET /customer 200 35540 - 130.279 ms
+
+info: GET /order 200 23643 - 104.093 ms
+
+info: GET /order 200 23643 - 114.316 ms
+
+info: GET /product 200 43959 - 134.005 ms
+
+info: GET /product 200 43959 - 147.172 ms
+
+info: GET /order 200 23643 - 149.516 ms
+
+info: GET /order 200 23643 - 157.926 ms
+
+info: GET /bill 200 12452 - 59.348 ms
+
+info: GET /address 200 18849 - 66.970 ms
+
+info: GET /bill 200 12452 - 71.436 ms
+
+info: GET /bill 200 12452 - 74.961 ms
+
+info: GET /bill 200 12452 - 78.542 ms
+
+info: GET /customer 200 35540 - 102.581 ms
+
+info: GET /order 200 23643 - 109.586 ms
+
+info: GET /order 200 23643 - 122.730 ms
+
+info: GET /order 200 23643 - 128.872 ms
+
+info: GET /order 200 23643 - 138.628 ms
+
+info: GET /product 200 43959 - 157.217 ms
+
+info: GET /product 200 43959 - 163.458 ms
+
+info: GET /bill 200 12452 - 62.722 ms
+
+info: GET /address 200 18849 - 75.362 ms
+
+info: GET /bill 200 12452 - 83.721 ms
+
+info: GET /bill 200 12452 - 87.225 ms
+
+info: GET /bill 200 12452 - 95.711 ms
+
+info: GET /customer 200 35540 - 112.665 ms
+
+info: GET /order 200 23643 - 118.838 ms
+
+info: GET /order 200 23643 - 126.864 ms
+
+info: GET /order 200 23643 - 135.891 ms
+
+info: GET /product 200 43959 - 154.242 ms
+
+info: GET /order 200 23643 - 156.593 ms
+
+info: GET /product 200 43959 - 171.108 ms
+
+info: GET /customer 200 35540 - 71.754 ms
+
+info: GET /bill 200 12452 - 76.369 ms
+
+info: GET /address 200 18849 - 83.561 ms
+
+info: GET /bill 200 12452 - 88.189 ms
+
+info: GET /bill 200 12452 - 94.036 ms
+
+info: GET /bill 200 12452 - 101.456 ms
+
+info: GET /order 200 23643 - 115.259 ms
+
+info: GET /order 200 23643 - 124.146 ms
+
+info: GET /product 200 43959 - 139.704 ms
+
+info: GET /order 200 23643 - 143.162 ms
+
+info: GET /order 200 23643 - 148.667 ms
+
+info: GET /product 200 43959 - 165.236 ms
+
+info: GET /customer 200 35540 - 65.002 ms
+
+info: GET /address 200 18849 - 66.672 ms
+
+info: GET /bill 200 12452 - 70.606 ms
+
+info: GET /bill 200 12452 - 75.341 ms
+
+info: GET /bill 200 12452 - 80.898 ms
+
+info: GET /bill 200 12452 - 88.636 ms
+
+info: GET /product 200 43959 - 123.395 ms
+
+info: GET /order 200 23643 - 132.004 ms
+
+info: GET /order 200 23643 - 151.507 ms
+
+info: GET /product 200 43959 - 170.109 ms
+
+info: GET /product 200 43959 - 183.694 ms
+
+info: GET /order 200 23643 - 194.306 ms
+
+info: GET /order 200 23643 - 208.817 ms
+
+info: GET /address 200 18849 - 70.994 ms
+
+info: GET /bill 200 12452 - 82.646 ms
+
+info: GET /bill 200 12452 - 93.391 ms
+
+info: GET /bill 200 12452 - 98.793 ms
+
+info: GET /bill 200 12452 - 103.797 ms
+
+info: GET /customer 200 35540 - 122.712 ms
+
+info: GET /order 200 23643 - 111.044 ms
+
+info: GET /order 200 23643 - 131.775 ms
+
+info: GET /order 200 23643 - 138.314 ms
+
+info: GET /order 200 23643 - 142.828 ms
+
+info: GET /product 200 43959 - 163.262 ms
+
+info: GET /product 200 43959 - 167.203 ms
+
+info: GET /address 200 18849 - 61.328 ms
+
+info: GET /customer 200 35540 - 75.511 ms
+
+info: GET /bill 200 12452 - 79.290 ms
+
+info: GET /bill 200 12452 - 82.279 ms
+
+info: GET /bill 200 12452 - 95.360 ms
+
+info: GET /bill 200 12452 - 97.811 ms
+
+info: GET /order 200 23643 - 116.937 ms
+
+info: GET /order 200 23643 - 131.726 ms
+
+info: GET /order 200 23643 - 148.614 ms
+
+info: GET /product 200 43959 - 163.303 ms
+
+info: GET /order 200 23643 - 165.810 ms
+
+info: GET /product 200 43959 - 183.277 ms
+
+info: GET /customer 200 35540 - 70.130 ms
+
+info: GET /address 200 18849 - 74.967 ms
+
+info: GET /bill 200 12452 - 78.506 ms
+
+info: GET /bill 200 12452 - 86.447 ms
+
+info: GET /bill 200 12452 - 92.251 ms
+
+info: GET /bill 200 12452 - 101.376 ms
+
+info: GET /product 200 43959 - 77.385 ms
+
+info: GET /order 200 23643 - 116.750 ms
+
+info: GET /order 200 23643 - 128.270 ms
+
+info: GET /order 200 23643 - 134.059 ms
+
+info: GET /product 200 43959 - 159.621 ms
+
+info: GET /order 200 23643 - 158.602 ms
+
+info: GET /product 200 43959 - 173.832 ms
+
+info: GET /customer 200 35540 - 67.876 ms
+
+info: GET /bill 200 12452 - 73.330 ms
+
+info: GET /address 200 18849 - 79.914 ms
+
+info: GET /bill 200 12452 - 82.991 ms
+
+info: GET /bill 200 12452 - 90.017 ms
+
+info: GET /bill 200 12452 - 95.975 ms
+
+info: GET /product 200 43959 - 89.359 ms
+
+info: GET /order 200 23643 - 118.262 ms
+
+info: GET /order 200 23643 - 126.733 ms
+
+info: GET /order 200 23643 - 138.654 ms
+
+info: GET /product 200 43959 - 160.483 ms
+
+info: GET /order 200 23643 - 161.144 ms
+
+info: GET /product 200 43959 - 184.891 ms
+
+info: GET /customer 200 35540 - 91.476 ms
+
+info: GET /bill 200 12452 - 79.206 ms
+
+info: GET /bill 200 12452 - 85.477 ms
+
+info: GET /address 200 18849 - 100.283 ms
+
+info: GET /bill 200 12452 - 102.015 ms
+
+info: GET /bill 200 12452 - 111.167 ms
+
+info: GET /order 200 23643 - 114.781 ms
+
+info: GET /order 200 23643 - 117.637 ms
+
+info: GET /order 200 23643 - 129.897 ms
+
+info: GET /product 200 43959 - 146.828 ms
+
+info: GET /order 200 23643 - 147.444 ms
+
+info: GET /product 200 43959 - 161.585 ms
+
+info: GET /bill 200 12452 - 65.183 ms
+
+info: GET /customer 200 35540 - 84.606 ms
+
+info: GET /address 200 18849 - 88.251 ms
+
+info: GET /bill 200 12452 - 94.456 ms
+
+info: GET /bill 200 12452 - 97.020 ms
+
+info: GET /bill 200 12452 - 106.309 ms
+
+info: GET /order 200 23643 - 68.296 ms
+
+info: GET /order 200 23643 - 73.844 ms
+
+info: GET /product 200 43959 - 90.052 ms
+
+info: GET /order 200 23643 - 96.711 ms
+
+info: GET /product 200 43959 - 111.290 ms
+
+info: GET /order 200 23643 - 113.809 ms
+
+info: GET /bill 200 12452 - 66.942 ms
+
+info: GET /address 200 18849 - 84.550 ms
+
+info: GET /bill 200 12452 - 97.890 ms
+
+info: GET /bill 200 12452 - 103.563 ms
+
+info: GET /bill 200 12452 - 110.452 ms
+
+info: GET /customer 200 35540 - 129.938 ms
+
+info: GET /product 200 43959 - 89.227 ms
+
+info: GET /order 200 23643 - 123.756 ms
+
+info: GET /product 200 43959 - 135.573 ms
+
+info: GET /order 200 23643 - 134.725 ms
+
+info: GET /order 200 23643 - 145.314 ms
+
+info: GET /product 200 43959 - 161.180 ms
+
+info: GET /order 200 23643 - 161.753 ms
+
+info: GET /address 200 18849 - 62.253 ms
+
+info: GET /bill 200 12452 - 66.063 ms
+
+info: GET /bill 200 12452 - 75.197 ms
+
+info: GET /bill 200 12452 - 84.010 ms
+
+info: GET /bill 200 12452 - 88.898 ms
+
+info: GET /customer 200 35540 - 108.041 ms
+
+info: GET /order 200 23643 - 110.899 ms
+
+info: GET /order 200 23643 - 128.737 ms
+
+info: GET /product 200 43959 - 144.220 ms
+
+info: GET /order 200 23643 - 151.357 ms
+
+info: GET /order 200 23643 - 156.646 ms
+
+info: GET /product 200 43959 - 178.666 ms
+
+info: GET /customer 200 35540 - 70.266 ms
+
+info: GET /bill 200 12452 - 72.207 ms
+
+info: GET /address 200 18849 - 85.969 ms
+
+info: GET /bill 200 12452 - 92.472 ms
+
+info: GET /bill 200 12452 - 102.855 ms
+
+info: GET /bill 200 12452 - 111.573 ms
+
+info: GET /order 200 23643 - 116.199 ms
+
+info: GET /order 200 23643 - 118.298 ms
+
+info: GET /order 200 23643 - 130.905 ms
+
+info: GET /order 200 23643 - 139.275 ms
+
+info: GET /product 200 43959 - 152.178 ms
+
+info: GET /product 200 43959 - 157.425 ms
+
+info: GET /address 200 18849 - 61.640 ms
+
+info: GET /customer 200 35540 - 77.603 ms
+
+info: GET /bill 200 12452 - 79.164 ms
+
+info: GET /bill 200 12452 - 84.141 ms
+
+info: GET /bill 200 12452 - 90.433 ms
+
+info: GET /bill 200 12452 - 94.658 ms
+
+info: GET /product 200 43959 - 87.887 ms
+
+info: GET /order 200 23643 - 121.255 ms
+
+info: GET /order 200 23643 - 139.897 ms
+
+info: GET /order 200 23643 - 155.549 ms
+
+info: GET /product 200 43959 - 182.369 ms
+
+info: GET /product 200 43959 - 197.825 ms
+
+info: GET /order 200 23643 - 198.542 ms
+
+info: GET /address 200 18849 - 67.554 ms
+
+info: GET /bill 200 12452 - 72.210 ms
+
+info: GET /bill 200 12452 - 77.428 ms
+
+info: GET /bill 200 12452 - 89.984 ms
+
+info: GET /bill 200 12452 - 104.032 ms
+
+info: GET /customer 200 35540 - 130.529 ms
+
+info: GET /product 200 43959 - 90.084 ms
+
+info: GET /order 200 23643 - 136.709 ms
+
+info: GET /order 200 23643 - 151.484 ms
+
+info: GET /product 200 43959 - 171.480 ms
+
+info: GET /product 200 43959 - 180.035 ms
+
+info: GET /order 200 23643 - 188.128 ms
+
+info: GET /order 200 23643 - 197.337 ms
+
+info: GET /bill 200 12452 - 67.917 ms
+
+info: GET /address 200 18849 - 77.929 ms
+
+info: GET /bill 200 12452 - 83.454 ms
+
+info: GET /bill 200 12452 - 88.177 ms
+
+info: GET /bill 200 12452 - 96.371 ms
+
+info: GET /customer 200 35540 - 114.488 ms
+
+info: GET /product 200 43959 - 96.528 ms
+
+info: GET /product 200 43959 - 76.456 ms
+
+info: GET /order 200 23643 - 95.937 ms
+
+info: GET /order 200 23643 - 109.167 ms
+
+info: GET /order 200 23643 - 115.456 ms
+
+info: GET /order 200 23643 - 141.572 ms
+
+info: GET /product 200 43959 - 161.159 ms
+
+info: GET /customer 200 35540 - 100.673 ms
+
+info: GET /address 200 18849 - 60.611 ms
+
+info: GET /bill 200 12452 - 68.294 ms
+
+info: GET /bill 200 12452 - 65.558 ms
+
+info: GET /bill 200 12452 - 68.919 ms
+
+info: GET /bill 200 12452 - 77.821 ms
+
+info: GET /product 200 43959 - 92.347 ms
+
+info: GET /product 200 43959 - 91.033 ms
+
+info: GET /order 200 23643 - 121.253 ms
+
+info: GET /order 200 23643 - 129.510 ms
+
+info: GET /order 200 23643 - 136.712 ms
+
+info: GET /order 200 23643 - 148.774 ms
+
+info: GET /product 200 43959 - 166.203 ms
+
+info: GET /customer 200 35540 - 118.582 ms
+
+info: GET /bill 200 12452 - 63.253 ms
+
+info: GET /address 200 18849 - 78.039 ms
+
+info: GET /bill 200 12452 - 84.262 ms
+
+info: GET /bill 200 12452 - 91.868 ms
+
+info: GET /bill 200 12452 - 99.820 ms
+
+info: GET /product 200 43959 - 90.695 ms
+
+info: GET /order 200 23643 - 115.472 ms
+
+info: GET /order 200 23643 - 131.803 ms
+
+info: GET /product 200 43959 - 143.331 ms
+
+info: GET /order 200 23643 - 145.939 ms
+
+info: GET /order 200 23643 - 156.902 ms
+
+info: GET /product 200 43959 - 174.494 ms
+
+info: GET /customer 200 35540 - 70.793 ms
+
+info: GET /address 200 18849 - 73.537 ms
+
+info: GET /bill 200 12452 - 82.714 ms
+
+info: GET /bill 200 12452 - 90.993 ms
+
+info: GET /bill 200 12452 - 102.356 ms
+
+info: GET /bill 200 12452 - 112.861 ms
+
+info: GET /order 200 23643 - 114.875 ms
+
+info: GET /order 200 23643 - 133.118 ms
+
+info: GET /order 200 23643 - 137.135 ms
+
+info: GET /order 200 23643 - 155.040 ms
+
+info: GET /product 200 43959 - 175.937 ms
+
+info: GET /product 200 43959 - 182.609 ms
+
+info: GET /customer 200 35540 - 72.195 ms
+
+info: GET /address 200 18849 - 76.648 ms
+
+info: GET /bill 200 12452 - 83.697 ms
+
+info: GET /bill 200 12452 - 87.438 ms
+
+info: GET /bill 200 12452 - 74.952 ms
+
+info: GET /bill 200 12452 - 81.775 ms
+
+info: GET /order 200 23643 - 108.584 ms
+
+info: GET /order 200 23643 - 116.559 ms
+
+info: GET /order 200 23643 - 131.068 ms
+
+info: GET /order 200 23643 - 136.476 ms
+
+info: GET /product 200 43959 - 154.018 ms
+
+info: GET /product 200 43959 - 161.728 ms
+
+info: GET /address 200 18849 - 60.049 ms
+
+info: GET /customer 200 35540 - 73.635 ms
+
+info: GET /bill 200 12452 - 71.667 ms
+
+info: GET /bill 200 12452 - 79.527 ms
+
+info: GET /bill 200 12452 - 85.952 ms
+
+info: GET /bill 200 12452 - 90.960 ms
+
+info: GET /order 200 23643 - 107.053 ms
+
+info: GET /order 200 23643 - 118.206 ms
+
+info: GET /order 200 23643 - 123.300 ms
+
+info: GET /order 200 23643 - 136.841 ms
+
+info: GET /product 200 43959 - 156.942 ms
+
+info: GET /product 200 43959 - 160.241 ms
+
+info: GET /address 200 18849 - 59.633 ms
+
+info: GET /bill 200 12452 - 66.442 ms
+
+info: GET /bill 200 12452 - 73.877 ms
+
+info: GET /bill 200 12452 - 83.309 ms
+
+info: GET /bill 200 12452 - 88.082 ms
+
+info: GET /customer 200 35540 - 104.874 ms
+
+info: GET /order 200 23643 - 114.407 ms
+
+info: GET /order 200 23643 - 124.084 ms
+
+info: GET /order 200 23643 - 132.364 ms
+
+info: GET /product 200 43959 - 153.320 ms
+
+info: GET /order 200 23643 - 153.976 ms
+
+info: GET /product 200 43959 - 176.154 ms
+
+info: GET /address 200 18849 - 63.345 ms
+
+info: GET /customer 200 35540 - 77.026 ms
+
+info: GET /bill 200 12452 - 78.199 ms
+
+info: GET /bill 200 12452 - 83.144 ms
+
+info: GET /bill 200 12452 - 86.994 ms
+
+info: GET /bill 200 12452 - 94.147 ms
+
+info: GET /order 200 23643 - 149.119 ms
+
+info: GET /order 200 23643 - 172.641 ms
+
+info: GET /product 200 43959 - 196.360 ms
+
+info: GET /product 200 43959 - 211.880 ms
+
+info: GET /order 200 23643 - 211.395 ms
+
+info: GET /order 200 23643 - 229.688 ms
+
+info: GET /bill 200 12452 - 89.588 ms
+
+info: GET /bill 200 12452 - 102.405 ms
+
+info: GET /address 200 18849 - 124.770 ms
+
+info: GET /bill 200 12452 - 138.470 ms
+
+info: GET /bill 200 12452 - 147.830 ms
+
+info: GET /customer 200 35540 - 194.835 ms
+
+info: GET /product 200 43959 - 95.380 ms
+
+info: GET /order 200 23643 - 137.749 ms
+
+info: GET /product 200 43959 - 162.287 ms
+
+info: GET /product 200 43959 - 164.203 ms
+
+info: GET /order 200 23643 - 170.517 ms
+
+info: GET /order 200 23643 - 189.261 ms
+
+info: GET /order 200 23643 - 194.946 ms
+
+info: GET /address 200 18849 - 67.203 ms
+
+info: GET /bill 200 12452 - 82.146 ms
+
+info: GET /bill 200 12452 - 88.654 ms
+
+info: GET /bill 200 12452 - 97.095 ms
+
+info: GET /bill 200 12452 - 103.608 ms
+
+info: GET /customer 200 35540 - 125.201 ms
+
+info: GET /order 200 23643 - 103.648 ms
+
+info: GET /order 200 23643 - 115.725 ms
+
+info: GET /order 200 23643 - 128.197 ms
+
+info: GET /order 200 23643 - 143.806 ms
+
+info: GET /product 200 43959 - 162.663 ms
+
+info: GET /product 200 43959 - 168.531 ms
+
+info: GET /address 200 18849 - 59.486 ms
+
+info: GET /bill 200 12452 - 69.195 ms
+
+info: GET /bill 200 12452 - 73.937 ms
+
+info: GET /bill 200 12452 - 84.245 ms
+
+info: GET /bill 200 12452 - 95.389 ms
+
+info: GET /customer 200 35540 - 111.838 ms
+
+info: GET /product 200 43959 - 94.345 ms
+
+info: GET /product 200 43959 - 99.372 ms
+
+info: GET /order 200 23643 - 128.392 ms
+
+info: GET /order 200 23643 - 134.526 ms
+
+info: GET /order 200 23643 - 140.469 ms
+
+info: GET /product 200 43959 - 162.352 ms
+
+info: GET /order 200 23643 - 159.690 ms
+
+info: GET /customer 200 35540 - 119.965 ms
+
+info: GET /address 200 18849 - 59.553 ms
+
+info: GET /bill 200 12452 - 68.713 ms
+
+info: GET /bill 200 12452 - 75.878 ms
+
+info: GET /bill 200 12452 - 84.119 ms
+
+info: GET /bill 200 12452 - 96.592 ms
+
+info: GET /product 200 43959 - 93.795 ms
+
+info: GET /order 200 23643 - 101.723 ms
+
+info: GET /order 200 23643 - 115.856 ms
+
+info: GET /order 200 23643 - 126.945 ms
+
+info: GET /order 200 23643 - 135.715 ms
+
+info: GET /product 200 43959 - 156.478 ms
+
+info: GET /product 200 43959 - 160.504 ms
+
+info: GET /bill 200 12452 - 64.590 ms
+
+info: GET /address 200 18849 - 72.088 ms
+
+info: GET /bill 200 12452 - 74.789 ms
+
+info: GET /bill 200 12452 - 85.464 ms
+
+info: GET /bill 200 12452 - 88.963 ms
+
+info: GET /customer 200 35540 - 105.228 ms
+
+info: GET /order 200 23643 - 114.303 ms
+
+info: GET /order 200 23643 - 118.634 ms
+
+info: GET /order 200 23643 - 122.431 ms
+
+info: GET /product 200 43959 - 155.324 ms
+
+info: GET /order 200 23643 - 147.304 ms
+
+info: GET /product 200 43959 - 169.748 ms
+
+info: GET /address 200 18849 - 59.542 ms
+
+info: GET /bill 200 12452 - 77.353 ms
+
+info: GET /bill 200 12452 - 84.415 ms
+
+info: GET /bill 200 12452 - 91.544 ms
+
+info: GET /bill 200 12452 - 97.287 ms
+
+info: GET /customer 200 35540 - 113.311 ms
+
+info: GET /product 200 43959 - 91.396 ms
+
+info: GET /order 200 23643 - 116.441 ms
+
+info: GET /order 200 23643 - 133.033 ms
+
+info: GET /order 200 23643 - 145.078 ms
+
+info: GET /order 200 23643 - 151.082 ms
+
+info: GET /product 200 43959 - 171.353 ms
+
+info: GET /product 200 43959 - 179.636 ms
+
+info: GET /address 200 18849 - 64.859 ms
+
+info: GET /customer 200 35540 - 77.073 ms
+
+info: GET /bill 200 12452 - 84.150 ms
+
+info: GET /bill 200 12452 - 86.950 ms
+
+info: GET /bill 200 12452 - 95.665 ms
+
+info: GET /bill 200 12452 - 103.243 ms
+
+info: GET /order 200 23643 - 116.860 ms
+
+info: GET /order 200 23643 - 124.738 ms
+
+info: GET /order 200 23643 - 131.221 ms
+
+info: GET /product 200 43959 - 152.652 ms
+
+info: GET /order 200 23643 - 151.469 ms
+
+info: GET /product 200 43959 - 168.484 ms
+
+info: GET /customer 200 35540 - 68.285 ms
+
+info: GET /bill 200 12452 - 71.783 ms
+
+info: GET /address 200 18849 - 79.647 ms
+
+info: GET /bill 200 12452 - 81.285 ms
+
+info: GET /bill 200 12452 - 90.683 ms
+
+info: GET /bill 200 12452 - 96.605 ms
+
+info: GET /product 200 43959 - 89.883 ms
+
+info: GET /order 200 23643 - 115.184 ms
+
+info: GET /order 200 23643 - 129.155 ms
+
+info: GET /order 200 23643 - 141.989 ms
+
+info: GET /product 200 43959 - 162.267 ms
+
+info: GET /order 200 23643 - 159.776 ms
+
+info: GET /product 200 43959 - 182.456 ms
+
+info: GET /customer 200 35540 - 75.238 ms
+
+info: GET /address 200 18849 - 80.725 ms
+
+info: GET /bill 200 12452 - 88.379 ms
+
+info: GET /bill 200 12452 - 95.819 ms
+
+info: GET /bill 200 12452 - 104.668 ms
+
+info: GET /bill 200 12452 - 113.393 ms
+
+info: GET /product 200 43959 - 90.666 ms
+
+info: GET /order 200 23643 - 114.708 ms
+
+info: GET /order 200 23643 - 122.798 ms
+
+info: GET /order 200 23643 - 141.403 ms
+
+info: GET /product 200 43959 - 158.118 ms
+
+info: GET /order 200 23643 - 157.806 ms
+
+info: GET /product 200 43959 - 174.318 ms
+
+info: GET /address 200 18849 - 58.725 ms
+
+info: GET /bill 200 12452 - 64.541 ms
+
+info: GET /bill 200 12452 - 68.209 ms
+
+info: GET /bill 200 12452 - 71.155 ms
+
+info: GET /bill 200 12452 - 79.029 ms
+
+info: GET /customer 200 35540 - 106.456 ms
+
+info: GET /order 200 23643 - 112.679 ms
+
+info: GET /order 200 23643 - 120.064 ms
+
+info: GET /order 200 23643 - 128.748 ms
+
+info: GET /order 200 23643 - 136.166 ms
+
+info: GET /product 200 43959 - 154.219 ms
+
+info: GET /product 200 43959 - 161.410 ms
+
+info: GET /address 200 18849 - 59.219 ms
+
+info: GET /bill 200 12452 - 64.437 ms
+
+info: GET /bill 200 12452 - 68.409 ms
+
+info: GET /bill 200 12452 - 75.956 ms
+
+info: GET /bill 200 12452 - 79.177 ms
+
+info: GET /customer 200 35540 - 99.447 ms
+
+info: GET /order 200 23643 - 108.192 ms
+
+info: GET /order 200 23643 - 117.976 ms
+
+info: GET /order 200 23643 - 122.384 ms
+
+info: GET /product 200 43959 - 143.043 ms
+
+info: GET /order 200 23643 - 139.521 ms
+
+info: GET /product 200 43959 - 155.661 ms
+
+info: GET /bill 200 12452 - 60.589 ms
+
+info: GET /address 200 18849 - 66.393 ms
+
+info: GET /bill 200 12452 - 71.613 ms
+
+info: GET /bill 200 12452 - 76.361 ms
+
+info: GET /bill 200 12452 - 92.205 ms
+
+info: GET /customer 200 35540 - 105.527 ms
+
+info: GET /order 200 23643 - 108.638 ms
+
+info: GET /order 200 23643 - 113.601 ms
+
+info: GET /order 200 23643 - 130.147 ms
+
+info: GET /product 200 43959 - 144.462 ms
+
+info: GET /order 200 23643 - 142.996 ms
+
+info: GET /product 200 43959 - 158.187 ms
+
+info: GET /address 200 18849 - 63.118 ms
+
+info: GET /bill 200 12452 - 65.672 ms
+
+info: GET /bill 200 12452 - 74.051 ms
+
+info: GET /bill 200 12452 - 80.572 ms
+
+info: GET /bill 200 12452 - 86.541 ms
+
+info: GET /customer 200 35540 - 117.682 ms
+
+info: GET /order 200 23643 - 106.768 ms
+
+info: GET /order 200 23643 - 117.736 ms
+
+info: GET /order 200 23643 - 131.119 ms
+
+info: GET /order 200 23643 - 136.922 ms
+
+info: GET /product 200 43959 - 159.654 ms
+
+info: GET /product 200 43959 - 172.522 ms
+
+info: GET /address 200 18849 - 57.883 ms
+
+info: GET /bill 200 12452 - 63.382 ms
+
+info: GET /bill 200 12452 - 68.222 ms
+
+info: GET /bill 200 12452 - 76.436 ms
+
+info: GET /bill 200 12452 - 85.818 ms
+
+info: GET /customer 200 35540 - 99.682 ms
+
+info: GET /order 200 23643 - 116.111 ms
+
+info: GET /order 200 23643 - 124.973 ms
+
+info: GET /order 200 23643 - 127.956 ms
+
+info: GET /product 200 43959 - 144.925 ms
+
+info: GET /order 200 23643 - 145.035 ms
+
+info: GET /product 200 43959 - 159.231 ms
+
+info: GET /address 200 18849 - 60.445 ms
+
+info: GET /bill 200 12452 - 65.744 ms
+
+info: GET /bill 200 12452 - 70.635 ms
+
+info: GET /bill 200 12452 - 74.759 ms
+
+info: GET /bill 200 12452 - 82.972 ms
+
+info: GET /customer 200 35540 - 100.019 ms
+
+info: GET /product 200 43959 - 90.706 ms
+
+info: GET /order 200 23643 - 116.457 ms
+
+info: GET /order 200 23643 - 128.725 ms
+
+info: GET /order 200 23643 - 134.843 ms
+
+info: GET /product 200 43959 - 155.026 ms
+
+info: GET /order 200 23643 - 153.719 ms
+
+info: GET /product 200 43959 - 168.814 ms
+
+info: GET /address 200 18849 - 61.350 ms
+
+info: GET /bill 200 12452 - 64.787 ms
+
+info: GET /bill 200 12452 - 74.508 ms
+
+info: GET /bill 200 12452 - 80.295 ms
+
+info: GET /bill 200 12452 - 85.391 ms
+
+info: GET /customer 200 35540 - 104.229 ms
+
+info: GET /order 200 23643 - 88.664 ms
+
+info: GET /product 200 43959 - 102.136 ms
+
+info: GET /order 200 23643 - 109.514 ms
+
+info: GET /product 200 43959 - 126.247 ms
+
+info: GET /order 200 23643 - 134.156 ms
+
+info: GET /order 200 23643 - 143.874 ms
+
+info: GET /bill 200 12452 - 79.072 ms
+
+info: GET /bill 200 12452 - 92.081 ms
+
+info: GET /bill 200 12452 - 104.040 ms
+
+info: GET /bill 200 12452 - 105.285 ms
+
+info: GET /address 200 18849 - 121.451 ms
+
+info: GET /customer 200 35540 - 138.117 ms
+
+info: GET /order 200 23643 - 119.000 ms
+
+info: GET /order 200 23643 - 131.612 ms
+
+info: GET /order 200 23643 - 138.490 ms
+
+info: GET /product 200 43959 - 159.178 ms
+
+info: GET /product 200 43959 - 170.520 ms
+
+info: GET /order 200 23643 - 170.256 ms
+
+info: GET /address 200 18849 - 60.412 ms
+
+info: GET /bill 200 12452 - 68.615 ms
+
+info: GET /bill 200 12452 - 73.417 ms
+
+info: GET /bill 200 12452 - 82.550 ms
+
+info: GET /bill 200 12452 - 87.604 ms
+
+info: GET /customer 200 35540 - 106.969 ms
+
+info: GET /order 200 23643 - 116.452 ms
+
+info: GET /order 200 23643 - 123.864 ms
+
+info: GET /order 200 23643 - 135.237 ms
+
+info: GET /product 200 43959 - 154.845 ms
+
+info: GET /product 200 43959 - 162.671 ms
+
+info: GET /order 200 23643 - 163.160 ms
+
+info: GET /bill 200 12452 - 58.818 ms
+
+info: GET /address 200 18849 - 66.772 ms
+
+info: GET /bill 200 12452 - 73.258 ms
+
+info: GET /bill 200 12452 - 77.253 ms
+
+info: GET /bill 200 12452 - 82.650 ms
+
+info: GET /customer 200 35540 - 101.857 ms
+
+info: GET /order 200 23643 - 114.292 ms
+
+info: GET /order 200 23643 - 124.277 ms
+
+info: GET /order 200 23643 - 139.572 ms
+
+info: GET /product 200 43959 - 163.818 ms
+
+info: GET /product 200 43959 - 172.169 ms
+
+info: GET /order 200 23643 - 172.289 ms
+
+info: GET /address 200 18849 - 66.163 ms
+
+info: GET /bill 200 12452 - 73.357 ms
+
+info: GET /bill 200 12452 - 79.967 ms
+
+info: GET /bill 200 12452 - 83.550 ms
+
+info: GET /bill 200 12452 - 90.370 ms
+
+info: GET /customer 200 35540 - 111.819 ms
+
+info: GET /product 200 43959 - 93.303 ms
+
+info: GET /order 200 23643 - 114.998 ms
+
+info: GET /order 200 23643 - 129.882 ms
+
+info: GET /order 200 23643 - 144.706 ms
+
+info: GET /order 200 23643 - 158.508 ms
+
+info: GET /product 200 43959 - 179.267 ms
+
+info: GET /product 200 43959 - 185.037 ms
+
+info: GET /bill 200 12452 - 63.404 ms
+
+info: GET /customer 200 35540 - 77.020 ms
+
+info: GET /address 200 18849 - 79.353 ms
+
+info: GET /bill 200 12452 - 82.936 ms
+
+info: GET /bill 200 12452 - 85.968 ms
+
+info: GET /bill 200 12452 - 91.620 ms
+
+info: GET /product 200 43959 - 97.768 ms
+
+info: GET /order 200 23643 - 108.125 ms
+
+info: GET /order 200 23643 - 119.259 ms
+
+info: GET /order 200 23643 - 139.194 ms
+
+info: GET /product 200 43959 - 156.399 ms
+
+info: GET /order 200 23643 - 162.937 ms
+
+info: GET /customer 200 35540 - 93.281 ms
+
+info: GET /bill 200 12452 - 72.986 ms
+
+info: GET /address 200 18849 - 78.881 ms
+
+info: GET /bill 200 12452 - 83.816 ms
+
+info: GET /bill 200 12452 - 87.913 ms
+
+info: GET /bill 200 12452 - 93.084 ms
+
+info: GET /product 200 43959 - 85.713 ms
+
+info: GET /product 200 43959 - 96.527 ms
+
+info: GET /order 200 23643 - 111.676 ms
+
+info: GET /order 200 23643 - 121.317 ms
+
+info: GET /order 200 23643 - 128.569 ms
+
+info: GET /order 200 23643 - 136.410 ms
+
+info: GET /bill 200 12452 - 67.056 ms
+
+info: GET /bill 200 12452 - 75.878 ms
+
+info: GET /bill 200 12452 - 80.486 ms
+
+info: GET /bill 200 12452 - 88.627 ms
+
+info: GET /address 200 18849 - 95.992 ms
+
+info: GET /customer 200 35540 - 106.815 ms
+
+info: GET /order 200 23643 - 114.144 ms
+
+info: GET /order 200 23643 - 124.921 ms
+
+info: GET /order 200 23643 - 132.255 ms
+
+info: GET /order 200 23643 - 138.538 ms
+
+info: GET /product 200 43959 - 162.609 ms
+
+info: GET /product 200 43959 - 168.036 ms
+
+info: GET /address 200 18849 - 59.376 ms
+
+info: GET /bill 200 12452 - 66.269 ms
+
+info: GET /bill 200 12452 - 70.912 ms
+
+info: GET /bill 200 12452 - 73.925 ms
+
+info: GET /bill 200 12452 - 80.790 ms
+
+info: GET /customer 200 35540 - 97.947 ms
+
+info: GET /product 200 43959 - 99.173 ms
+
+info: GET /order 200 23643 - 111.671 ms
+
+info: GET /order 200 23643 - 124.600 ms
+
+info: GET /order 200 23643 - 140.710 ms
+
+info: GET /order 200 23643 - 145.017 ms
+
+info: GET /product 200 43959 - 169.123 ms
+
+info: GET /customer 200 35540 - 99.667 ms
+
+info: GET /address 200 18849 - 64.435 ms
+
+info: GET /bill 200 12452 - 70.759 ms
+
+info: GET /bill 200 12452 - 76.563 ms
+
+info: GET /bill 200 12452 - 83.994 ms
+
+info: GET /bill 200 12452 - 92.488 ms
+
+info: GET /order 200 23643 - 110.168 ms
+
+info: GET /order 200 23643 - 115.571 ms
+
+info: GET /order 200 23643 - 128.518 ms
+
+info: GET /order 200 23643 - 131.636 ms
+
+info: GET /product 200 43959 - 151.548 ms
+
+info: GET /product 200 43959 - 159.200 ms
+
+info: GET /bill 200 12452 - 58.505 ms
+
+info: GET /address 200 18849 - 65.987 ms
+
+info: GET /bill 200 12452 - 65.440 ms
+
+info: GET /bill 200 12452 - 70.277 ms
+
+info: GET /bill 200 12452 - 79.606 ms
+
+info: GET /customer 200 35540 - 99.905 ms
+
+info: GET /order 200 23643 - 105.641 ms
+
+info: GET /order 200 23643 - 109.168 ms
+
+info: GET /order 200 23643 - 122.483 ms
+
+info: GET /order 200 23643 - 130.465 ms
+
+info: GET /product 200 43959 - 155.940 ms
+
+info: GET /product 200 43959 - 167.455 ms
+
+info: GET /address 200 18849 - 66.109 ms
+
+info: GET /bill 200 12452 - 72.511 ms
+
+info: GET /bill 200 12452 - 77.931 ms
+
+info: GET /bill 200 12452 - 85.123 ms
+
+info: GET /bill 200 12452 - 90.719 ms
+
+info: GET /customer 200 35540 - 106.351 ms
+
+info: GET /order 200 23643 - 115.763 ms
+
+info: GET /order 200 23643 - 126.398 ms
+
+info: GET /product 200 43959 - 144.385 ms
+
+info: GET /order 200 23643 - 147.126 ms
+
+info: GET /order 200 23643 - 153.439 ms
+
+info: GET /product 200 43959 - 175.625 ms
+
+info: GET /address 200 18849 - 63.853 ms
+
+info: GET /bill 200 12452 - 70.743 ms
+
+info: GET /customer 200 35540 - 102.143 ms
+
+info: GET /bill 200 12452 - 85.332 ms
+
+info: GET /bill 200 12452 - 86.925 ms
+
+info: GET /bill 200 12452 - 91.278 ms
+
+info: GET /order 200 23643 - 113.711 ms
+
+info: GET /order 200 23643 - 116.555 ms
+
+info: GET /order 200 23643 - 131.356 ms
+
+info: GET /order 200 23643 - 139.911 ms
+
+info: GET /product 200 43959 - 168.061 ms
+
+info: GET /product 200 43959 - 175.872 ms
+
+info: GET /bill 200 12452 - 61.770 ms
+
+info: GET /address 200 18849 - 69.163 ms
+
+info: GET /bill 200 12452 - 77.919 ms
+
+info: GET /bill 200 12452 - 82.298 ms
+
+info: GET /bill 200 12452 - 89.310 ms
+
+info: GET /customer 200 35540 - 112.841 ms
+
+info: GET /order 200 23643 - 110.256 ms
+
+info: GET /order 200 23643 - 121.191 ms
+
+info: GET /order 200 23643 - 133.271 ms
+
+info: GET /product 200 43959 - 148.241 ms
+
+info: GET /order 200 23643 - 144.450 ms
+
+info: GET /product 200 43959 - 162.249 ms
+
+info: GET /address 200 18849 - 56.356 ms
+
+info: GET /bill 200 12452 - 64.094 ms
+
+info: GET /bill 200 12452 - 66.878 ms
+
+info: GET /bill 200 12452 - 75.695 ms
+
+info: GET /bill 200 12452 - 82.837 ms
+
+info: GET /customer 200 35540 - 101.646 ms
+
+info: GET /product 200 43959 - 92.386 ms
+
+info: GET /order 200 23643 - 111.071 ms
+
+info: GET /order 200 23643 - 122.427 ms
+
+info: GET /order 200 23643 - 130.972 ms
+
+info: GET /product 200 43959 - 147.885 ms
+
+info: GET /order 200 23643 - 148.580 ms
+
+info: GET /product 200 43959 - 163.842 ms
+
+info: GET /bill 200 12452 - 69.487 ms
+
+info: GET /bill 200 12452 - 74.034 ms
+
+info: GET /bill 200 12452 - 80.838 ms
+
+info: GET /bill 200 12452 - 86.145 ms
+
+info: GET /address 200 18849 - 100.069 ms
+
+info: GET /customer 200 35540 - 116.008 ms
+
+info: GET /order 200 23643 - 113.131 ms
+
+info: GET /order 200 23643 - 124.887 ms
+
+info: GET /order 200 23643 - 129.789 ms
+
+info: GET /order 200 23643 - 143.398 ms
+
+info: GET /product 200 43959 - 161.394 ms
+
+info: GET /product 200 43959 - 166.474 ms
+
+info: GET /bill 200 12452 - 63.155 ms
+
+info: GET /bill 200 12452 - 68.676 ms
+
+info: GET /address 200 18849 - 77.894 ms
+
+info: GET /bill 200 12452 - 83.862 ms
+
+info: GET /bill 200 12452 - 87.404 ms
+
+info: GET /customer 200 35540 - 103.422 ms
+
+info: GET /product 200 43959 - 102.033 ms
+
+info: GET /order 200 23643 - 123.531 ms
+
+info: GET /order 200 23643 - 135.847 ms
+
+info: GET /product 200 43959 - 165.507 ms
+
+info: GET /order 200 23643 - 153.392 ms
+
+info: GET /product 200 43959 - 182.467 ms
+
+info: GET /order 200 23643 - 172.372 ms
+
+info: GET /bill 200 12452 - 81.518 ms
+
+info: GET /address 200 18849 - 89.860 ms
+
+info: GET /bill 200 12452 - 95.116 ms
+
+info: GET /bill 200 12452 - 101.903 ms
+
+info: GET /bill 200 12452 - 112.502 ms
+
+info: GET /customer 200 35540 - 142.354 ms
+
+info: GET /product 200 43959 - 89.303 ms
+
+info: GET /product 200 43959 - 97.660 ms
+
+info: GET /order 200 23643 - 112.608 ms
+
+info: GET /order 200 23643 - 129.246 ms
+
+info: GET /order 200 23643 - 146.517 ms
+
+info: GET /order 200 23643 - 159.604 ms
+
+info: GET /bill 200 12452 - 78.447 ms
+
+info: GET /address 200 18849 - 88.398 ms
+
+info: GET /bill 200 12452 - 96.254 ms
+
+info: GET /bill 200 12452 - 101.143 ms
+
+info: GET /bill 200 12452 - 110.028 ms
+
+info: GET /customer 200 35540 - 125.670 ms
+
+info: GET /order 200 23643 - 69.096 ms
+
+info: GET /order 200 23643 - 88.430 ms
+
+info: GET /product 200 43959 - 103.185 ms
+
+info: GET /order 200 23643 - 106.562 ms
+
+info: GET /order 200 23643 - 121.682 ms
+
+info: GET /product 200 43959 - 143.933 ms
+
+info: GET /bill 200 12452 - 65.246 ms
+
+info: GET /bill 200 12452 - 69.943 ms
+
+info: GET /address 200 18849 - 79.310 ms
+
+info: GET /bill 200 12452 - 84.604 ms
+
+info: GET /bill 200 12452 - 87.165 ms
+
+info: GET /customer 200 35540 - 103.511 ms
+
+info: GET /order 200 23643 - 112.700 ms
+
+info: GET /order 200 23643 - 128.530 ms
+
+info: GET /order 200 23643 - 132.639 ms
+
+info: GET /order 200 23643 - 145.821 ms
+
+info: GET /product 200 43959 - 164.159 ms
+
+info: GET /product 200 43959 - 172.505 ms
+
+info: GET /address 200 18849 - 69.226 ms
+
+info: GET /bill 200 12452 - 78.546 ms
+
+info: GET /bill 200 12452 - 83.967 ms
+
+info: GET /customer 200 35540 - 120.316 ms
+
+info: GET /bill 200 12452 - 109.086 ms
+
+info: GET /bill 200 12452 - 120.418 ms
+
+info: GET /order 200 23643 - 115.386 ms
+
+info: GET /order 200 23643 - 125.407 ms
+
+info: GET /order 200 23643 - 137.980 ms
+
+info: GET /order 200 23643 - 141.225 ms
+
+info: GET /product 200 43959 - 164.840 ms
+
+info: GET /product 200 43959 - 173.465 ms
+
+info: GET /customer 200 35540 - 65.589 ms
+
+info: GET /bill 200 12452 - 67.281 ms
+
+info: GET /address 200 18849 - 73.425 ms
+
+info: GET /bill 200 12452 - 76.941 ms
+
+info: GET /bill 200 12452 - 81.569 ms
+
+info: GET /bill 200 12452 - 90.556 ms
+
+info: GET /product 200 43959 - 90.601 ms
+
+info: GET /order 200 23643 - 108.787 ms
+
+info: GET /order 200 23643 - 122.102 ms
+
+info: GET /order 200 23643 - 135.868 ms
+
+info: GET /product 200 43959 - 154.461 ms
+
+info: GET /order 200 23643 - 153.113 ms
+
+info: GET /product 200 43959 - 170.300 ms
+
+info: GET /address 200 18849 - 70.368 ms
+
+info: GET /customer 200 35540 - 86.292 ms
+
+info: GET /bill 200 12452 - 91.450 ms
+
+info: GET /bill 200 12452 - 98.744 ms
+
+info: GET /bill 200 12452 - 105.701 ms
+
+info: GET /bill 200 12452 - 112.156 ms
+
+info: GET /order 200 23643 - 118.408 ms
+
+info: GET /order 200 23643 - 123.801 ms
+
+info: GET /order 200 23643 - 156.583 ms
+
+info: GET /order 200 23643 - 156.646 ms
+
+info: GET /product 200 43959 - 181.058 ms
+
+info: GET /product 200 43959 - 189.653 ms
+
+info: GET /address 200 18849 - 59.441 ms
+
+info: GET /customer 200 35540 - 76.037 ms
+
+info: GET /bill 200 12452 - 79.098 ms
+
+info: GET /bill 200 12452 - 84.485 ms
+
+info: GET /bill 200 12452 - 83.831 ms
+
+info: GET /bill 200 12452 - 86.698 ms
+
+info: GET /product 200 43959 - 137.794 ms
+
+info: GET /order 200 23643 - 106.619 ms
+
+info: GET /order 200 23643 - 119.224 ms
+
+info: GET /order 200 23643 - 124.384 ms
+
+info: GET /order 200 23643 - 129.252 ms
+
+info: GET /product 200 43959 - 149.892 ms
+
+info: GET /product 200 43959 - 170.660 ms
+
+info: GET /address 200 18849 - 58.453 ms
+
+info: GET /bill 200 12452 - 61.783 ms
+
+info: GET /bill 200 12452 - 69.079 ms
+
+info: GET /bill 200 12452 - 75.401 ms
+
+info: GET /bill 200 12452 - 67.544 ms
+
+info: GET /customer 200 35540 - 99.390 ms
+
+info: GET /order 200 23643 - 116.829 ms
+
+info: GET /order 200 23643 - 121.080 ms
+
+info: GET /order 200 23643 - 130.363 ms
+
+info: GET /product 200 43959 - 143.886 ms
+
+info: GET /order 200 23643 - 142.138 ms
+
+info: GET /product 200 43959 - 160.953 ms
+
+info: GET /address 200 18849 - 61.951 ms
+
+info: GET /bill 200 12452 - 67.423 ms
+
+info: GET /bill 200 12452 - 73.428 ms
+
+info: GET /bill 200 12452 - 78.015 ms
+
+info: GET /bill 200 12452 - 84.076 ms
+
+info: GET /customer 200 35540 - 101.880 ms
+
+info: GET /order 200 23643 - 66.739 ms
+
+info: GET /product 200 43959 - 82.661 ms
+
+info: GET /order 200 23643 - 79.123 ms
+
+info: GET /product 200 43959 - 93.584 ms
+
+info: GET /order 200 23643 - 92.966 ms
+
+info: GET /order 200 23643 - 102.152 ms
+
+info: GET /address 200 18849 - 56.322 ms
+
+info: GET /bill 200 12452 - 64.592 ms
+
+info: GET /bill 200 12452 - 71.423 ms
+
+info: GET /bill 200 12452 - 77.057 ms
+
+info: GET /bill 200 12452 - 83.434 ms
+
+info: GET /customer 200 35540 - 97.769 ms
+
+info: GET /product 200 43959 - 89.624 ms
+
+info: GET /product 200 43959 - 78.395 ms
+
+info: GET /order 200 23643 - 98.606 ms
+
+info: GET /order 200 23643 - 102.528 ms
+
+info: GET /order 200 23643 - 110.411 ms
+
+info: GET /order 200 23643 - 122.244 ms
+
+info: GET /product 200 43959 - 148.603 ms
+
+info: GET /customer 200 35540 - 94.768 ms
+
+info: GET /address 200 18849 - 62.920 ms
+
+info: GET /bill 200 12452 - 67.920 ms
+
+info: GET /bill 200 12452 - 75.953 ms
+
+info: GET /bill 200 12452 - 85.258 ms
+
+info: GET /bill 200 12452 - 88.748 ms
+
+info: GET /product 200 43959 - 85.273 ms
+
+info: GET /order 200 23643 - 106.725 ms
+
+info: GET /order 200 23643 - 113.211 ms
+
+info: GET /order 200 23643 - 129.904 ms
+
+info: GET /order 200 23643 - 142.690 ms
+
+info: GET /product 200 43959 - 163.770 ms
+
+info: GET /customer 200 35540 - 92.904 ms
+
+info: GET /address 200 18849 - 59.336 ms
+
+info: GET /bill 200 12452 - 59.431 ms
+
+info: GET /bill 200 12452 - 68.316 ms
+
+info: GET /bill 200 12452 - 73.460 ms
+
+info: GET /bill 200 12452 - 81.629 ms
+
+info: GET /product 401 12 - 4.314 ms
+
+info: GET /product 401 12 - 3.160 ms
+
+info: GET /order 401 12 - 3.159 ms
+
+info: GET /order 401 12 - 3.328 ms
+
+info: GET /order 401 12 - 3.125 ms
+
+info: GET /order 401 12 - 2.841 ms
+
+info: GET /customer 401 12 - 3.140 ms
+
+info: GET /address 401 12 - 2.751 ms
+
+info: GET /bill 401 12 - 2.647 ms
+
+info: GET /bill 401 12 - 2.548 ms
+
+info: GET /bill 401 12 - 2.780 ms
+
+info: GET /bill 401 12 - 3.028 ms
+
+info: GET /product 401 12 - 2.992 ms
+
+info: GET /product 401 12 - 3.206 ms
+
+info: GET /order 401 12 - 2.873 ms
+
+info: GET /order 401 12 - 2.720 ms
+
+info: GET /order 401 12 - 2.918 ms
+
+info: GET /order 401 12 - 3.066 ms
+
+info: GET /customer 401 12 - 2.941 ms
+
+info: GET /address 401 12 - 3.010 ms
+
+info: GET /bill 401 12 - 3.047 ms
+
+info: GET /bill 401 12 - 2.545 ms
+
+info: GET /bill 401 12 - 2.594 ms
+
+info: GET /bill 401 12 - 2.890 ms
+
+info: POST /login 200 391 - 146.503 ms
+
+info: GET /product 200 43959 - 81.081 ms
+
+info: GET /order 200 23643 - 109.776 ms
+
+info: GET /order 200 23643 - 120.912 ms
+
+info: GET /product 200 43959 - 134.909 ms
+
+info: GET /order 200 23643 - 138.874 ms
+
+info: GET /order 200 23643 - 143.433 ms
+
+info: GET /customer 200 35540 - 85.295 ms
+
+info: GET /address 200 18849 - 58.330 ms
+
+info: GET /bill 200 12452 - 61.340 ms
+
+info: GET /bill 200 12452 - 69.718 ms
+
+info: GET /bill 200 12452 - 78.667 ms
+
+info: GET /bill 200 12452 - 88.221 ms
+
+info: GET /address 200 18849 - 58.620 ms
+
+info: GET /order 200 23643 - 104.506 ms
+
+info: GET /order 200 23643 - 118.164 ms
+
+info: GET /order 200 23643 - 125.164 ms
+
+info: GET /order 200 23643 - 137.718 ms
+
+info: GET /product 200 43959 - 160.155 ms
+
+info: GET /product 200 43959 - 174.713 ms
+
+info: GET /address 200 18849 - 60.246 ms
+
+info: GET /bill 200 12452 - 67.571 ms
+
+info: GET /bill 200 12452 - 74.109 ms
+
+info: GET /bill 200 12452 - 77.650 ms
+
+info: GET /bill 200 12452 - 87.952 ms
+
+info: GET /customer 200 35540 - 112.915 ms
+

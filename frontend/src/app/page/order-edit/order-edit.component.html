@@ -1,0 +1,159 @@
+<div class="row mt-3">
+  <div class="col-md-6 col-sm-8">
+    <div *ngIf="order$ | async as order" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title" *ngIf="(order._id !== 'new')">Rendelés szerkesztése</h4>
+        <h4 class="card-title" *ngIf="(order._id === 'new')">Új rendelés felvétele</h4>
+      </div>
+
+      <div class="card-body">
+        <form #orderForm="ngForm">
+          <h3 class="h4 text-primary font-weight-bold">
+            ID:
+            <span *ngIf="(order._id !== 'new')">{{ order._id }}</span>
+            <span *ngIf="(order._id === 'new')">generált</span>
+          </h3>
+          <input type="hidden" name="id" [(ngModel)]="order._id" required />
+
+          <h3 class="h5 text-secondary">Vásárló *</h3>
+          <div class="ms-3">
+            <h6>Azonosító</h6>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="customerId"
+                name="customerId"
+                [(ngModel)]="order['customerId']._id"
+                #customerId="ngModel"
+                pattern="^[0-9a-z]{1,30}$"
+                required
+              />
+              <div
+                *ngIf="
+                  customerId.invalid && (customerId.dirty || customerId.touched)
+                "
+                class="alert"
+              >
+                <div *ngIf="customerId.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="customerId.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Termék *</h3>
+          <div class="ms-3">
+            <h6>Azonosító</h6>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="productId"
+                name="productId"
+                [(ngModel)]="order['productId']._id"
+                #productId="ngModel"
+                pattern="^[0-9a-z]{1,30}$"
+                required
+              />
+              <div
+                *ngIf="
+                  productId.invalid && (productId.dirty || productId.touched)
+                "
+                class="alert"
+              >
+                <div *ngIf="productId.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="productId.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Mennyiség *</h3>
+          <div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control"
+                id="amount"
+                name="amount"
+                [(ngModel)]="order['amount']"
+                #amount="ngModel"
+                pattern="^[0-9a-z]{1,20}$"
+                required
+              />
+              <div
+                *ngIf="amount.invalid && (amount.dirty || amount.touched)"
+                class="alert"
+              >
+                <div *ngIf="amount.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="amount.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Státusz *</h3>
+          <div>
+            <div class="form-group">
+              <select
+                [(ngModel)]="order['status']"
+                name="category"
+                class="form-control"
+                pattern="^completed|in progress|cancelled$"
+                #status="ngModel"
+              >
+                <option value="">choose a category</option>
+                <option>completed</option>
+                <option>in progress</option>
+                <option>cancelled</option>
+              </select>
+              <div
+                *ngIf="status.invalid && (status.dirty || status.touched)"
+                class="alert"
+              >
+                <div *ngIf="status.errors?.['pattern']">
+                  Kérjük, csak számokat és betüket írjon be! Szóköz nem lehet!
+                </div>
+                <div *ngIf="status.errors?.['required']">
+                  Kérjük, töltse ki a mezőt!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right mt-3">
+            <button
+              [disabled]="orderForm.invalid"
+              *ngIf="order['_id'] != 'new'"
+              (click)="onUpdate(order, orderForm)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Update order
+            </button>
+            <button
+              [disabled]="orderForm.invalid"
+              *ngIf="order['_id'] == 'new'"
+              (click)="onCreate(order)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Create order
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

@@ -1,0 +1,17 @@
+<!-- {{ list$ | async | json }} -->
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">Címek</h1>
+</div>
+
+<ngx-data-table
+  *ngIf="list$ | async as list"
+  [name]="'cím'"
+  [columns]="columns"
+  [list]="list"
+  (selectOne)="onSelectOne($event)"
+  (deleteOne)="onDeleteOne($event)"
+  (createOne)="onCreateOne()">
+></ngx-data-table>
+

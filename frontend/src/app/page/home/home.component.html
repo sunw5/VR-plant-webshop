@@ -1,0 +1,104 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">Dashboard</h1>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+  <div class="col">
+    <div class="card h-100 border-outline-success shadow">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-4">Termékek</h5>
+        <p class="card-text" *ngIf="listProduct$ | async as list">
+          Összes termék: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listProductAvaiable$ | async as list">
+          Elérhtő termék: {{ list.length }}
+        </p>
+        <a
+          [routerLink]="['/termekek']"
+          class="btn btn-outline-success btn-sm mt-auto"
+          >listához</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-outline-success shadow">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-4">Rendelések</h5>
+        <p class="card-text" *ngIf="listOrder$ | async as list">
+          Összes rendelés: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listOrderCompleted$ | async as list">
+          Teljesített rendelés: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listOrderInProgress$ | async as list">
+          Folyamatban levő rendelés: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listOrderWithdrawn$ | async as list">
+          Visszavont rendelés: {{ list.length }}
+        </p>
+        <a
+          [routerLink]="['/rendelesek']"
+          class="btn btn-outline-success btn-sm mt-auto"
+          >listához</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-outline-success shadow">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-4">Vásárlók</h5>
+        <p class="card-text" *ngIf="listCustomer$ | async as list">
+          Összes vásárló: {{ list.length }}
+        </p>
+        <a
+          [routerLink]="['/vasarlok']"
+          class="btn btn-outline-success btn-sm mt-auto"
+          >listához</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-outline-success shadow">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-4">Címek</h5>
+        <p class="card-text" *ngIf="listAddress$ | async as list">
+          Összes cím: {{ list.length }}
+        </p>
+        <a
+          [routerLink]="['/cimek']"
+          class="btn btn-outline-success btn-sm mt-auto"
+          >listához</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-outline-success shadow">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-4">Számlák</h5>
+        <p class="card-text" *ngIf="listBill$ | async as list">
+          Összes számla: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listBillNew$ | async as list">
+          Új számla: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listBillCompleted$ | async as list">
+          Teljesített számla: {{ list.length }}
+        </p>
+        <p class="card-text" *ngIf="listBillStorned$ | async as list">
+          Visszavont számla: {{ list.length }}
+        </p>
+        <a
+          [routerLink]="['/szamlak']"
+          class="btn btn-outline-success btn-sm mt-auto"
+          >listához</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

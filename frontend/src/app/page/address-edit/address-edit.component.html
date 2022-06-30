@@ -1,0 +1,123 @@
+<div class="row mt-3">
+  <div class="col-md-6 col-sm-8">
+    <div *ngIf="address$ | async as address" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title" *ngIf="address._id !== 'new'">
+          Cím szerkesztése
+        </h4>
+        <h4 class="card-title" *ngIf="address._id === 'new'">
+          Új cím felvétele
+        </h4>
+      </div>
+
+      <div class="card-body">
+        <form #addressForm="ngForm">
+          <h3 class="h4 text-primary font-weight-bold">
+            ID:
+            <span *ngIf="address._id !== 'new'">{{ address._id }}</span>
+            <span *ngIf="address._id === 'new'">generált</span>
+          </h3>
+          <input type="hidden" name="id" [(ngModel)]="address._id" required />
+
+          <h3 class="h5 text-secondary">Irányítószám *</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="zip"
+              name="zip"
+              [(ngModel)]="address.zip"
+              #zip="ngModel"
+              pattern="^[0-9]{1,4}$"
+              required
+            />
+            <div
+              *ngIf="zip.invalid && (zip.dirty || zip.touched)"
+              class="alert"
+            >
+              <div *ngIf="zip.errors?.['pattern']">
+                Kérjük, csak számokat írjon be! Szóköz nem lehet, maximum
+                4karakter!
+              </div>
+              <div *ngIf="zip.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Város *</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              name="city"
+              [(ngModel)]="address.city"
+              #city="ngModel"
+              pattern="^[a-zA-ZÁÉÍÓÖŐÚÜŰáéíóöőúüű\.]{1,30}$"
+              required
+            />
+            <div
+              *ngIf="city.invalid && (city.dirty || city.touched)"
+              class="alert"
+            >
+              <div *ngIf="city.errors?.['pattern']">
+                Kérjük, csak betüket írjon be! Szóköz nem lehet!
+              </div>
+              <div *ngIf="city.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Utca, házszám *</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="street"
+              name="street"
+              [(ngModel)]="address.street"
+              #street="ngModel"
+              pattern="^[0-9a-zA-ZÁÉÍÓÖŐÚÜŰáéíóöőúüű \.]{1,30}$"
+              required
+            />
+            <div
+              *ngIf="street.invalid && (street.dirty || street.touched)"
+              class="alert"
+            >
+              <div *ngIf="street.errors?.['pattern']">
+                Kérjük, csak számokat és betüket írjon be!
+              </div>
+              <div *ngIf="street.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right mt-3">
+            <button
+              [disabled]="addressForm.invalid"
+              *ngIf="address['_id'] != 'new'"
+              (click)="onUpdate(address, addressForm)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Update address
+            </button>
+            <button
+              [disabled]="addressForm.invalid"
+              *ngIf="address['_id'] == 'new'"
+              (click)="onCreate(address)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Create address
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

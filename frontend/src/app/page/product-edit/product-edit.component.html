@@ -1,0 +1,391 @@
+<div class="row mt-3">
+  <div class="col-md-6 col-sm-8">
+    <div *ngIf="product$ | async as product" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title" *ngIf="product._id !== 'new'">
+          Termék szerkesztése
+        </h4>
+        <h4 class="card-title" *ngIf="product._id === 'new'">
+          Új termék felvétele
+        </h4>
+      </div>
+
+      <div class="card-body">
+        <form #productForm="ngForm">
+          <h3 class="h4 text-primary font-weight-bold">
+            ID:
+            <span *ngIf="product._id !== 'new'">{{ product._id }}</span>
+            <span *ngIf="product._id === 'new'">generált</span>
+          </h3>
+          <input type="hidden" name="id" [(ngModel)]="product._id" required />
+
+          <h3 class="h5 text-secondary">Magyar név *</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="nameHun"
+              name="nameHun"
+              [(ngModel)]="product['Magyar név']"
+              #nameHun="ngModel"
+              required
+              pattern="^[A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,5}$"
+            />
+            <div
+              *ngIf="nameHun.invalid && (nameHun.dirty || nameHun.touched)"
+              class="alert"
+            >
+              <div *ngIf="nameHun.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="nameHun.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Latin név *</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="nameLat"
+              name="nameLat"
+              [(ngModel)]="product['Latin név']"
+              #nameLat="ngModel"
+              pattern="^[A-Za-z]{1,20}( [A-Za-z]{1,20}){0,5}$"
+            />
+            <div
+              *ngIf="nameLat.invalid && (nameLat.dirty || nameLat.touched)"
+              class="alert"
+            >
+              <div *ngIf="nameLat.errors?.['pattern']">
+                Kérjük, csak ékezet nélküli betűket írjon be! Szóköz csak a
+                szavak között lehet!
+              </div>
+              <div *ngIf="nameLat.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Elérhető *</h3>
+          <div class="form-check form-check-radio">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="activeTrue"
+                name="activeTrue"
+                [(ngModel)]="product['Elérhető']"
+                [value]="true"
+              />
+              Igen
+              <span class="circle">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+          <div class="form-check form-check-radio">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="activeFalse"
+                name="activeFalse"
+                [(ngModel)]="product['Elérhető']"
+                [value]="false"
+              />
+              Nem
+              <span class="circle">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+
+          <h3 class="h5 text-secondary">Ár *</h3>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control"
+              id="price"
+              name="price"
+              [(ngModel)]="product['Ár']"
+              #price="ngModel"
+              required
+              pattern="^[1-9][0-9]{0,20}$"
+              min="1"
+            />
+            <div
+              *ngIf="price.invalid && (price.dirty || price.touched)"
+              class="alert"
+            >
+              <div *ngIf="price.errors?.['pattern']">
+                Kérem adjon meg egy pozitív egész számot!
+              </div>
+              <div *ngIf="price.errors?.['required']">
+                Az ár megadása kötelező!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Fényigény</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="light"
+              name="light"
+              [(ngModel)]="product['Fényigény']"
+              #light="ngModel"
+              pattern="^[A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="light.invalid && (light.dirty || light.touched)"
+              class="alert"
+            >
+              <div *ngIf="light.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="light.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Tenyészidő</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="lasting"
+              name="lasting"
+              [(ngModel)]="product['Tenyészidő']"
+              #lasting="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="lasting.invalid && (lasting.dirty || lasting.touched)"
+              class="alert"
+            >
+              <div *ngIf="lasting.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="lasting.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Talajigény</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="soil"
+              name="soil"
+              [(ngModel)]="product['Talajigény']"
+              #soil="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű,\.]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű,\.]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="soil.invalid && (soil.dirty || soil.touched)"
+              class="alert"
+            >
+              <div *ngIf="soil.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="soil.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Habitus</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="habit"
+              name="habit"
+              [(ngModel)]="product['Habitus']"
+              #habit="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="habit.invalid && (habit.dirty || habit.touched)"
+              class="alert"
+            >
+              <div *ngIf="habit.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="habit.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Teljes magasság</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="fullheight"
+              name="fullheight"
+              [(ngModel)]="product['Teljes magasság']"
+              #fullheight="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű\-]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű\-,]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="
+                fullheight.invalid && (fullheight.dirty || fullheight.touched)
+              "
+              class="alert"
+            >
+              <div *ngIf="fullheight.errors?.['pattern']">
+                Kérjük, adjon meg magasságot számmal majd adja meg a
+                mértékegységet magyar betükkel! Szóköz csak a szavak, számok
+                között lehet! Pl.: 1 - 5 méter
+              </div>
+              <div *ngIf="fullheight.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Kiszerelés</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="package"
+              name="package"
+              [(ngModel)]="product['Kiszerelés']"
+              #package="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="package.invalid && (package.dirty || package.touched)"
+              class="alert"
+            >
+              <div *ngIf="package.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="package.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Virágzás ideje</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="flowering"
+              name="flowering"
+              [(ngModel)]="product['Virágzás ideje']"
+              #flowering="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű-]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű-]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="
+                flowering.invalid && (flowering.dirty || flowering.touched)
+              "
+              class="alert"
+            >
+              <div *ngIf="flowering.errors?.['pattern']">
+                Kérjük, adja meg a virágzás hónapjait római számokkal! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="flowering.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Virág színe</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="flowerColor"
+              name="flowerColor"
+              [(ngModel)]="product['Virág színe']"
+              #flowerColor="ngModel"
+              pattern="^[A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]{1,20}){0,50}$"
+            />
+            <div
+              *ngIf="
+                flowerColor.invalid &&
+                (flowerColor.dirty || flowerColor.touched)
+              "
+              class="alert"
+            >
+              <div *ngIf="flowerColor.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="flowerColor.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h5 text-secondary">Egyéb</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="other"
+              name="other"
+              [(ngModel)]="product['Egyéb']"
+              #other="ngModel"
+              pattern="^[0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű,\.]{1,20}( [0-9A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű,\.]{1,20}){0,100}$"
+            />
+            <div
+              *ngIf="other.invalid && (other.dirty || other.touched)"
+              class="alert"
+            >
+              <div *ngIf="other.errors?.['pattern']">
+                Kérjük, csak magyar betüket tartalmazó szavakat írjon be! Szóköz
+                csak a szavak között lehet!
+              </div>
+              <div *ngIf="other.errors?.['required']">
+                Kérjük, töltse ki a mezőt!
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <button
+              [disabled]="productForm.invalid"
+              *ngIf="product['_id'] != 'new'"
+              (click)="onUpdate(product, productForm)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Update product
+            </button>
+            <button
+              [disabled]="productForm.invalid"
+              *ngIf="product['_id'] == 'new'"
+              (click)="onCreate(product)"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Create product
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

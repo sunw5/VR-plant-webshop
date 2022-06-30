@@ -1,0 +1,88 @@
+<div class="col-2 form-group">
+  <label for="tableSearch">Keresés:</label>
+  <select [(ngModel)]="filterKey" id="tableSearch" class="form-control">
+    <option>Oszlopban..</option>
+    <option *ngFor="let key of columns">
+      {{ key.title }}
+    </option>
+  </select>
+</div>
+
+<div class="col-2 mb-5 input_container">
+  <input
+    [(ngModel)]="phrase"
+    type="text"
+    class="form-control"
+    placeholder="Search..."
+
+    (input)="filterData()"
+  />
+</div>
+<!-- dev log start -->
+filteredList.length: {{ filteredList.length }}<br>
+filterKey: {{ filterKey }}<br>
+keys[filterKey]: {{ keys[filterKey] }}<br>
+<!-- dev log end -->
+<div>
+  <button (click)="onCreate()" class="col-12 mb-1 btn btn-success">Új {{name}} létrehozása</button>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th *ngFor="let col of columns" scope="col">{{ col.title }}</th>
+      </tr>
+    </thead>
+    <!-- todo -->
+    <tbody *ngIf="filteredList" >
+      <tr  *ngFor="let row of filteredList | slice: startSlice:endSlice">
+        <td *ngFor="let col of columns">{{ row[col.key] }}</td>
+        <td>
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Button group with edit and delete buttons"
+          >
+            <button (click)="onSelect(row)" class="btn btn-warning">
+              <i-feather name="edit2"></i-feather>
+            </button>
+            <button (click)="onDelete(row)" class="btn btn-danger">
+              <i-feather name="trash"></i-feather>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- dev log start -->
+filteredList.length: {{ filteredList.length }}
+pageList: {{ pageList }}
+<!-- dev log end -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination mt-4">
+    <li class="page-item">
+      <button
+        class="page-link"
+        (click)="jumpToPage(page - 1)"
+        [disabled]="page === 1"
+      >
+        Előző
+      </button>
+    </li>
+    <li *ngFor="let pageNum of pageList" class="page-item">
+      <button class="page-link" (click)="jumpToPage(pageNum)">
+        {{ pageNum }}
+      </button>
+    </li>
+    <li class="page-item">
+      <button
+        class="page-link"
+        (click)="jumpToPage(page + 1)"
+        [disabled]="page === pageList.length"
+      >
+        Következő
+      </button>
+    </li>
+  </ul>
+</nav>

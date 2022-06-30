@@ -1,0 +1,1066 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Vizsgaremek Szerver API Dokumentáció
+  description: A Vizsgaremek végpontjainek részeletes leírása és használata
+servers:
+  - url: http://localhost:3000
+paths:
+  # PRODUCTS
+  /product:
+    get:
+      description: Returns a list of products
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new product
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Product'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+
+  /product/{product_id}:
+    get:
+      description: Returns a product by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    put:
+      description: Updates a product by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Partially updates a product by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    delete:
+      description: Deletes a product by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  # CUSTOMERS
+  /customer:
+    get:
+      description: Returns a list of customers
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Customer'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new customer
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Customer'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  /customer/{customer_id}:
+    get:
+      description: Returns a customer by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    put:
+      description: Updates a customer by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Partially updates a customer by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    delete:
+      description: Deletes a customer by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  # ORDERS
+  /order:
+    get:
+      description: Returns a list of orders
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Order'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new order
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  /order/{order_id}:
+    get:
+      description: Returns an order by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Order'
+        '404':
+          description: Order not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    put:
+      description: Updates an order by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Order'
+        '404':
+          description: Order not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Partially updates an order by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Order'
+        '404':
+          description: Order not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    delete:
+      description: Deletes an order by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Order'
+        '404':
+          description: Order not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  # BILLS
+  /bill:
+    get:
+      description: Returns a list of bills
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Bill'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new bill
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bill'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Bill'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  /bill/{bill_id}:
+    get:
+      description: Returns a bill by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bill_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Bill'
+        '404':
+          description: Bill not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    put:
+      description: Updates a bill by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bill_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bill'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Bill'
+        '404':
+          description: Bill not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Partially updates a bill by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bill_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bill'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Bill'
+        '404':
+          description: Bill not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    delete:
+      description: Deletes a bill by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bill_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Bill'
+        '404':
+          description: Bill not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  # ADDRESSES
+  /address:
+    get:
+      description: Returns a list of addresses
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Address'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new address
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Address'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Address'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+  /address/{address_id}:
+    get:
+      description: Returns an address by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: address_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Address'
+        '404':
+          description: Address not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    put:
+      description: Updates an address by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: address_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Address'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Address'
+        '404':
+          description: Address not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Partially updates an address by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: address_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Address'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Address'
+        '404':
+          description: Address not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+    delete:
+      description: Deletes an address by id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: address_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Address'
+        '404':
+          description: Address not found
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:                
+                $ref: '#/components/schemas/Error'
+
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Product:
+      type: object
+      required:
+        - Elérhető
+        - Ár        
+      properties:
+        _id:
+          type: string
+          description: Product id
+        Magyar név:
+          type: string
+          description: Hungarian name
+        Elérhető:
+          type: boolean
+          description: Is available
+        Ár:
+          type: number
+          description: Price
+        Latin név:
+          type: string
+          description: Latin name
+        Fényigény:
+          type: string
+          description: Light
+        Tenyészidő:
+          type: string
+          description: Time
+        Talajigény:
+          type: string
+          description: Ground
+        Habitus:
+          type: string
+          description: Habitat 
+        Teljes magasság:
+          type: string
+          description: Full height
+        Kiszerelés:
+          type: string
+          description: Composition
+        Virágzás ideje:
+          type: string
+          description: Flowering time
+        Virág színe:
+          type: string
+          description: Flower color
+        Egyéb:
+          type: string
+          description: Other
+    Customer:
+      type: object
+      required:
+        - lastName
+        - firstName
+        - addressBillId
+        - email
+        - phone
+      properties:
+        _id:
+          type: string
+          description: Customer id
+        lastName:
+          type: string
+          description: Last name
+        firstName:
+          type: string
+          description: First name
+        addressBillId:
+          type: string
+          description: Billing address id
+        addressShipId:
+          type: string
+          description: Shipping address id
+        email:
+          type: string
+          description: Email
+        phone:
+          type: string
+          description: Phone
+    Order:
+      type: object
+      required:
+        - customerId
+        - productId
+        - amount
+        - status
+      properties:
+        _id:
+          type: string
+          description: Order id
+        customerId:
+          type: string
+          description: Customer id
+        productId:
+          type: string
+          description: Product id
+        amount:
+          type: number
+          description: Amount
+        status:
+          type: string
+          description: Status (completed, in progress, withdrawn)
+    Bill:
+      type: object
+      required:
+        - orderId
+        - price
+        - status
+      properties:
+        _id:
+          type: string
+          description: Bill id
+        orderId:
+          type: string
+          description: Order id
+        price:
+          type: number
+          description: Price
+        status:
+          type: string
+          description: Status (új, fizetve)
+    Address:
+      type: object
+      required:
+        - zip
+        - city
+        - street
+      properties:
+        _id:
+          type: string
+          description: Address id
+        zip:
+          type: string
+          description: Zip
+        city:
+          type: string
+          description: City
+        street:
+          type: string
+          description: Street
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        hasError:
+          type: boolean
+        status:
+          type: number
+          description: Status code (e.g. 404, 500)
+        message:
+          type: string
+          description: Error message
+    

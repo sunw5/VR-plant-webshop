@@ -1,0 +1,793 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@gmail.com",
+    "role": "3",
+    "password": "test"
+  },
+  {
+    "firstName": "Jill",
+    "lastName": "Doe",
+    "email": "jilldoe@gmail.com",
+    "role": "2",
+    "password": "test"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Kiss",
+    "lastName": "Jakab",
+    "email": "kissjakab@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Merényi",
+    "lastName": "Viktoria",
+    "email": "merenyiviki@gmail.com",
+    "role": "2",
+    "password": "test"
+  },
+  {
+    "firstName": "Kontz",
+    "lastName": "Ádám",
+    "email": "kontz.á@yahoo.com",
+    "role": "3",
+    "password": "test"
+  },
+  {
+    "firstName": "Sipos",
+    "lastName": "Soma",
+    "email": "sipos.soma@gmail.com",
+    "role": "2",
+    "password": "test"
+  },
+  {
+    "firstName": "Szőke",
+    "lastName": "Gitta",
+    "email": "szőkeg@hotmail.com",
+    "role": "3",
+    "password": "test"
+  },
+  {
+    "firstName": "Székely",
+    "lastName": "Kevin",
+    "email": "kszekely@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Novák",
+    "lastName": "Beatrix",
+    "email": "nbeatrix@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Szilágyi",
+    "lastName": "Maja",
+    "email": "szmaja@yahoo.com",
+    "role": "3",
+    "password": "test"
+  },
+  {
+    "firstName": "Ármin",
+    "lastName": "László",
+    "email": "larmin@hotmail.com",
+    "role": "2",
+    "password": "test"
+  },
+  {
+    "firstName": "Bence",
+    "lastName": "Pál",
+    "email": "b.pal@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Levente",
+    "lastName:": "Nagy",
+    "email": "nagy.levente@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Máté",
+    "lastName:": "Kovács",
+    "email": "kovacs.mate@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Dominik",
+    "lastName:": "Tóth",
+    "email": "toth.dominik@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Bence",
+    "lastName:": "Szabó",
+    "email": "szabo.bence@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Olivér",
+    "lastName:": "Horváth",
+    "email": "horvath.oliver@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Noel",
+    "lastName:": "Varga",
+    "email": "varga.noel@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Marcell",
+    "lastName:": "Kiss",
+    "email": "kiss.marcell@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Dániel",
+    "lastName:": "Molnár",
+    "email": "molnar.daniel@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zalán",
+    "lastName:": "Németh",
+    "email": "nemeth.zalan@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Ádám",
+    "lastName:": "Farkas",
+    "email": "farkas.adam@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Milán",
+    "lastName:": "Balogh",
+    "email": "balogh.milan@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Botond",
+    "lastName:": "Papp",
+    "email": "papp.botond@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Benett",
+    "lastName:": "Lakatos",
+    "email": "lakatos.benett@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Dávid",
+    "lastName:": "Takács",
+    "email": "takacs.david@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zsombor",
+    "lastName:": "Juhász",
+    "email": "juhasz.zsombor@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Áron",
+    "lastName:": "Oláh",
+    "email": "olah.aron@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Hanna",
+    "lastName:": "Mészáros",
+    "email": "meszaros.hanna@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zoé",
+    "lastName:": "Simon",
+    "email": "simon.zoe@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Anna",
+    "lastName:": "Rácz",
+    "email": "racz.anna@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Léna",
+    "lastName:": "Fekete",
+    "email": "fekete.lena@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Luca",
+    "lastName:": "Szilágyi",
+    "email": "szilagyi.luca@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Emma",
+    "lastName:": "Török",
+    "email": "torok.emma@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Boglárka",
+    "lastName:": "Fehér",
+    "email": "feher.boglarka@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lili",
+    "lastName:": "Balázs",
+    "email": "balazs.lili@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lilien",
+    "lastName:": "Gál",
+    "email": "gal.lilien@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lara",
+    "lastName:": "Kis",
+    "email": "kis.lara@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zsófia",
+    "lastName:": "Szűcs",
+    "email": "szucs.zsofia@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Laura",
+    "lastName:": "Orsós",
+    "email": "orsos.laura@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Mira",
+    "lastName:": "Kocsis",
+    "email": "kocsis.mira@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Sára",
+    "lastName:": "Fodor",
+    "email": "fodor.sara@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Olívia",
+    "lastName:": "Pintér",
+    "email": "pinter.olivia@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Nóra",
+    "lastName:": "Szalai",
+    "email": "szalai.nora@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Liza",
+    "lastName:": "Sipos",
+    "email": "sipos.liza@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Csenge",
+    "lastName:": "Magyar",
+    "email": "magyar.csenge@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Bella",
+    "lastName:": "Lukács",
+    "email": "lukacs.bella@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Panna",
+    "lastName:": "Gulyás",
+    "email": "gulyas.panna@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Liliána",
+    "lastName:": "Biró",
+    "email": "biro.liliana@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Kamilla",
+    "lastName:": "Király",
+    "email": "kiraly.kamilla@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Linett",
+    "lastName:": "Balog*",
+    "email": "balog*.linett@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Dóra",
+    "lastName:": "László",
+    "email": "laszlo.dora@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Attila",
+    "lastName:": "Bogdán",
+    "email": "bogdan.attila@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Ákos",
+    "lastName:": "Jakab",
+    "email": "jakab.akos@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zoltán",
+    "lastName:": "Katona",
+    "email": "katona.zoltan@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Martin",
+    "lastName:": "Sándor",
+    "email": "sandor.martin@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Alex",
+    "lastName:": "Váradi",
+    "email": "varadi.alex@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Vince",
+    "lastName:": "Boros",
+    "email": "boros.vince@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Gábor",
+    "lastName:": "Fazekas",
+    "email": "fazekas.gabor@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "János",
+    "lastName:": "Kelemen",
+    "email": "kelemen.janos@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Patrik",
+    "lastName:": "Antal",
+    "email": "antal.patrik@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Ábel",
+    "lastName:": "Orosz",
+    "email": "orosz.abel@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Bendegúz",
+    "lastName:": "Somogyi",
+    "email": "somogyi.bendeguz@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Erik",
+    "lastName:": "Fülöp",
+    "email": "fulop.erik@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zsolt",
+    "lastName:": "Veres",
+    "email": "veres.zsolt@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Krisztián",
+    "lastName:": "Budai",
+    "email": "budai.krisztian@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "József",
+    "lastName:": "Vincze",
+    "email": "vincze.jozsef@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Soma",
+    "lastName:": "Hegedűs",
+    "email": "hegedus.soma@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Sándor",
+    "lastName:": "Deák",
+    "email": "deak.sandor@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Viktória",
+    "lastName:": "Pap",
+    "email": "pap.viktoria@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Bianka",
+    "lastName:": "Bálint",
+    "email": "balint.bianka@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Szófia",
+    "lastName:": "Illés",
+    "email": "illes.szofia@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Rebeka",
+    "lastName:": "Pál",
+    "email": "pal.rebeka@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Réka",
+    "lastName:": "Vass",
+    "email": "vass.reka@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Blanka",
+    "lastName:": "Szőke",
+    "email": "szoke.blanka@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Szofi",
+    "lastName:": "Fábián",
+    "email": "fabian.szofi@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Petra",
+    "lastName:": "Vörös",
+    "email": "voros.petra@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Dorina",
+    "lastName:": "Lengyel",
+    "email": "lengyel.dorina@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Nara",
+    "lastName:": "Bognár",
+    "email": "bognar.nara@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Emília",
+    "lastName:": "Bodnár",
+    "email": "bodnar.emilia@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Noémi",
+    "lastName:": "Jónás",
+    "email": "jonas.noemi@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Eszter",
+    "lastName:": "Szücs",
+    "email": "szucs.eszter@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lia",
+    "lastName:": "Hajdu",
+    "email": "hajdu.lia@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lotti",
+    "lastName:": "Halász",
+    "email": "halasz.lotti@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Róza",
+    "lastName:": "Máté",
+    "email": "mate.roza@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Szonja",
+    "lastName:": "Székely",
+    "email": "szekely.szonja@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Abigél",
+    "lastName:": "Gáspár",
+    "email": "gaspar.abigel@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Csongor",
+    "lastName:": "Kozma",
+    "email": "kozma.csongor@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Vencel",
+    "lastName:": "Pásztor",
+    "email": "pasztor.vencel@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Szabolcs",
+    "lastName:": "Bakos",
+    "email": "bakos.szabolcs@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Mihály",
+    "lastName:": "Dudás",
+    "email": "dudas.mihaly@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Tibor",
+    "lastName:": "Virág",
+    "email": "virag.tibor@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Vilmos",
+    "lastName:": "Major",
+    "email": "major.vilmos@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zénó",
+    "lastName:": "Orbán",
+    "email": "orban.zeno@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Boldizsár",
+    "lastName:": "Hegedüs",
+    "email": "hegedus.boldizsar@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName:": "Barna",
+    "email": "barna.benjamin@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Simon",
+    "lastName:": "Novák",
+    "email": "novak.simon@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Gergely",
+    "lastName:": "Soós",
+    "email": "soos.gergely@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Kende",
+    "lastName:": "Tamás",
+    "email": "tamas.kende@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Imre",
+    "lastName:": "Nemes",
+    "email": "nemes.imre@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Miron",
+    "lastName:": "Pataki",
+    "email": "pataki.miron@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Bertalan",
+    "lastName:": "Balla",
+    "email": "balla.bertalan@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Viktor",
+    "lastName:": "Faragó",
+    "email": "farago.viktor@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Miklós",
+    "lastName:": "Kerekes",
+    "email": "kerekes.miklos@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Barbara",
+    "lastName:": "Barta",
+    "email": "barta.barbara@hotmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Kinga",
+    "lastName:": "Péter",
+    "email": "peter.kinga@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zejnep",
+    "lastName:": "Borbély",
+    "email": "borbely.zejnep@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Lora",
+    "lastName:": "Csonka",
+    "email": "csonka.lora@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Alina",
+    "lastName:": "Mezei",
+    "email": "mezei.alina@gmail.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Vanda",
+    "lastName:": "Sárközi",
+    "email": "sarkozi.vanda@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Zita",
+    "lastName:": "Berki",
+    "email": "berki.zita@yahoo.com",
+    "role": "1",
+    "password": "test"
+  },
+  {
+    "firstName": "Kiara",
+    "lastName:": "Márton",
+    "email": "marton.kiara@gmail.com",
+    "role": "1",
+    "password": "test"
+  }
+]
