@@ -35,18 +35,7 @@ export class NgxDataTableComponent<T extends { [x: string]: any }>
   page: number = 1;
   pageList: number[] = [];
 
-
-  // get pageList(): number[] {
-  //   const pageSize = Math.ceil(this.filteredList.length / this.pageSize);
-  //   return new Array(pageSize).fill(1).map((item, index) => index + 1);
-  // }
-
   constructor() {}
-
-  setFilteredList(li: T[]): void {
-    this.filteredList = li;
-    console.log('this.filteredList', this.filteredList);
-  }
 
   filterData(): void {
     console.log('filterData', this.phrase, this.filterKey);

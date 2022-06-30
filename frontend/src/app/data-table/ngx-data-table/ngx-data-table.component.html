@@ -18,11 +18,7 @@
     (input)="filterData()"
   />
 </div>
-<!-- dev log start -->
-filteredList.length: {{ filteredList.length }}<br>
-filterKey: {{ filterKey }}<br>
-keys[filterKey]: {{ keys[filterKey] }}<br>
-<!-- dev log end -->
+
 <div>
   <button (click)="onCreate()" class="col-12 mb-1 btn btn-success">Új {{name}} létrehozása</button>
 </div>
@@ -55,10 +51,7 @@ keys[filterKey]: {{ keys[filterKey] }}<br>
     </tbody>
   </table>
 </div>
-<!-- dev log start -->
-filteredList.length: {{ filteredList.length }}
-pageList: {{ pageList }}
-<!-- dev log end -->
+
 <nav aria-label="Page navigation example">
   <ul class="pagination mt-4">
     <li class="page-item">
