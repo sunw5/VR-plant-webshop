@@ -47,7 +47,7 @@ export class CustomerEditComponent implements OnInit {
             customer.addressShipId._id = address._id;
             this.customerService.create(customer).subscribe({
               next: (customer) => {
-                this.router.navigate([['/', 'vasarlok']]);
+                this.router.navigate(['/', 'vasarlok']);
               },
               error: (err) => {
                 console.error(err);
