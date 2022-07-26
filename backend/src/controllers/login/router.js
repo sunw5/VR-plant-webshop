@@ -13,7 +13,7 @@ router.post('/', async (req, res, next) => {
   }
 
   user.comparePassword(password, function (err, isMatch) {
-    if (err) {
+    if (err || !isMatch) {
       return res.sendStatus(401);
     }
 
